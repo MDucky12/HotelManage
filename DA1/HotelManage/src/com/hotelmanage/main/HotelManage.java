@@ -5,6 +5,9 @@
 package com.hotelmanage.main;
 
 import com.hotelmange.utils.Frame;
+//import com.hotelmange.utils.NotiPoint;
+import java.awt.EventQueue;
+import javax.swing.JPanel;
 
 /**
  *
@@ -17,9 +20,17 @@ public class HotelManage {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
-        new Frame("hehe");
-        
+
+        EventQueue.invokeLater(new Runnable() {
+
+            @Override
+            public void run() {
+                new Frame("HOTEL MANAGE APPLICATION").setVisible(true);
+            }
+        });
+
+//         JPanel panelIcon = new JPanel();
+//         panelIcon.setVisible(true);
     }
-    
+
 }
