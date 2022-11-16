@@ -24,7 +24,7 @@ public class Frame extends JFrame {
     public Frame(String title) {
         this.setTitle(title);
         // JPanel panelIcon = new JPanel();
-        this.setLayout(new FlowLayout());
+//        this.setLayout(new FlowLayout());
 //        this.add(panel, BorderLayout.EAST);
 //        panel.setPreferredSize(new Dimension(800, 700));
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -35,9 +35,9 @@ public class Frame extends JFrame {
         this.setLocationRelativeTo(null);
 //        panel.setBackground(new Color(0xFFFFFF));
         add(new NotiPoint());
-        this.getContentPane().setBackground(new Color(0x1C1427));
+//        this.getContentPane().setBackground(new Color(0x1C1427));
 
     }
-        
+       
 
 }
