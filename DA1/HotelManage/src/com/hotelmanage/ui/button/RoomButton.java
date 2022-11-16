@@ -10,8 +10,6 @@ import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import javax.swing.BorderFactory;
-import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
 /**
@@ -103,6 +101,8 @@ public class RoomButton extends JButton{
         setContentAreaFilled(false);
         this.setFocusable(false);
         
+       
+        
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
@@ -144,7 +144,7 @@ public class RoomButton extends JButton{
         g2.setColor(getBackground());
         
         g2.fillRoundRect(2, 2, getWidth() - 4, getHeight() - 4, radius, radius);
-        super.paintComponent(g); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/OverriddenMethodBody
+        super.paintComponent(g); 
     }
 
     
