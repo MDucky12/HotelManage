@@ -4,6 +4,8 @@
  */
 package com.hotelmanage.main;
 
+import com.hotelmange.utils.Frame;
+
 /**
  *
  * @author hoang
@@ -16,7 +18,8 @@ public class HotelManage {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        new MyFrame();
+        new Frame("hehe");
+        
     }
     
 }
