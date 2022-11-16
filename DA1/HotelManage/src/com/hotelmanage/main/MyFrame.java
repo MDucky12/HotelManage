@@ -5,10 +5,8 @@
 package com.hotelmanage.main;
 
 import com.hotelmanage.ui.button.RoomButton;
-import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.Random;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;

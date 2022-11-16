@@ -140,7 +140,9 @@ public class RoomButton extends JButton{
         
         //paint radius
         g2.setColor(borderColor);
+        //
         g2.fillRoundRect(0, 0, getWidth(), getHeight(), radius, radius);
+        
         g2.setColor(getBackground());
         
         g2.fillRoundRect(2, 2, getWidth() - 4, getHeight() - 4, radius, radius);
