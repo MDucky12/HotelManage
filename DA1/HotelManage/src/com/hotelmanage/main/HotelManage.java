@@ -25,7 +25,7 @@ public class HotelManage {
 
             @Override
             public void run() {
-                new Frame("HOTEL MANAGE APPLICATION").setVisible(true);
+                new Frame().setVisible(true);
             }
         });
 

@@ -5,7 +5,10 @@
 package com.hotelmange.utils;
 
 //import java.awt.BorderLayout;
+import java.awt.BorderLayout;
+import java.awt.CardLayout;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 //import java.awt.Dimension;
 //import java.awt.Graphics;
@@ -19,23 +22,35 @@ import javax.swing.JPanel;
  * @author duchmps23300
  */
 public class Frame extends JFrame {
-    String title;
+    
 
-    public Frame(String title) {
-        this.setTitle(title);
-        // JPanel panelIcon = new JPanel();
-//        this.setLayout(new FlowLayout());
-//        this.add(panel, BorderLayout.EAST);
-//        panel.setPreferredSize(new Dimension(800, 700));
+    public Frame() {     
+        //Set up JFrame
+        this.setLayout(new BorderLayout());
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//        this.setUndecorated(true);
         this.setResizable(false);
         this.setSize(1116, 700);
-        //this.setVisible(true);
+        this.setUndecorated(true);
         this.setLocationRelativeTo(null);
-//        panel.setBackground(new Color(0xFFFFFF));
-        add(new NotiPoint());
-//        this.getContentPane().setBackground(new Color(0x1C1427));
+        
+        
+        //
+        JPanel pnlWest = new JPanel();
+        JPanel pnlEast = new JPanel();
+        JPanel pnlIcon = new JPanel();
+        
+        pnlEast.setLayout(new CardLayout());
+        pnlWest.setLayout(new CardLayout());
+        
+        this.add(pnlEast, BorderLayout.EAST);
+        this.add(pnlWest, BorderLayout.WEST);
+        
+        pnlEast.setPreferredSize(new Dimension(900, 700));
+        pnlWest.setPreferredSize(new Dimension(216, 700));
+        pnlWest.setBackground(new Color(0x1C1427));
+        pnlEast.add(new MainScreen());
+        
+        
 
     }
        

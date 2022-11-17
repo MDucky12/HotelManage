@@ -15,7 +15,7 @@ import javax.swing.JPanel;
  *
  * @author duchmps23300
  */
-public class NotiPoint extends JPanel {
+public class MainScreen extends JPanel {
 
     private static void doDrawing(Graphics g) {
 
@@ -30,12 +30,12 @@ public class NotiPoint extends JPanel {
 
         g2d.setRenderingHints(rh);
         
-        g2d.setPaint(new Color(0xFFFFFF));
-        g2d.fillRoundRect(1000, 0, 100, 700, 25, 0);
         g2d.setPaint(new Color(0x1C1427));
-        g2d.fillRoundRect(0, 0, 350, 700, 0, 0);
+        g2d.fillRoundRect(0, 0, 450, 700, 0, 0);
         g2d.setPaint(new Color(0xFFFFFF));
-        g2d.fillRoundRect(200, 0, 900, 700, 40, 40);
+        g2d.fillRoundRect(450, 0, 450, 700, 0, 0);
+        g2d.setPaint(new Color(0xFFFFFF));
+        g2d.fillRoundRect(0, 0, 900, 700, 40, 40);
 
     }
 
