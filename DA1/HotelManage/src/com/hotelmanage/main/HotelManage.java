@@ -4,7 +4,7 @@
  */
 package com.hotelmanage.main;
 
-import com.hotelmange.utils.Frame;
+import com.hotelmanage.utils.Frame;
 //import com.hotelmange.utils.NotiPoint;
 import java.awt.EventQueue;
 import javax.swing.JPanel;
@@ -25,7 +25,7 @@ public class HotelManage {
 
             @Override
             public void run() {
-                new Frame("HOTEL MANAGE APPLICATION").setVisible(true);
+                new Frame().setVisible(true);
             }
         });
 
