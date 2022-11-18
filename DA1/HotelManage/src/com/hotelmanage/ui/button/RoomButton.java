@@ -100,9 +100,7 @@ public class RoomButton extends JButton{
         borderColor = new Color(255,255,255);
         setContentAreaFilled(false);
         this.setFocusable(false);
-        
-       
-        
+
         addMouseListener(new MouseAdapter() {
             @Override
             public void mouseEntered(MouseEvent e) {
@@ -127,9 +125,7 @@ public class RoomButton extends JButton{
                     setBackground(colorOver);
                 else 
                     setBackground(color);
-            }
-            
-            
+            }   
         });
     }
 
@@ -147,7 +143,5 @@ public class RoomButton extends JButton{
         
         g2.fillRoundRect(2, 2, getWidth() - 4, getHeight() - 4, radius, radius);
         super.paintComponent(g); 
-    }
-
-    
+    } 
 }
