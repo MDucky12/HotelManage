@@ -4,7 +4,7 @@
  */
 package com.hotelmanage.main;
 
-import com.hotelmange.utils.Frame;
+import com.hotelmanage.utils.Frame;
 //import com.hotelmange.utils.NotiPoint;
 import java.awt.EventQueue;
 import javax.swing.JPanel;
