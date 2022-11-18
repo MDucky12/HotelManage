@@ -4,12 +4,15 @@
  */
 package com.hotelmange.utils;
 
+import java.awt.BorderLayout;
+import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 /**
  *
@@ -21,27 +24,25 @@ public class LoginFrame extends JFrame {
 
     public LoginFrame(String title) {
         //Resize
-        this.setLayout(new FlowLayout());
+        this.setLayout(new BorderLayout());
         this.setTitle(title);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setResizable(false);
-        this.setSize(new Dimension(660, 770));
+        this.setSize(660, 770);
         this.setLocationRelativeTo(null);
-        
         //Add Image
         ImageAvatar img = new ImageAvatar();
-        img.setBounds(200, 80, 260, 260);
+        img.setBounds(200, 80, 100, 100);
         ImageIcon icon = new ImageIcon("src\\com\\hotelmanage\\icon\\user.png");
         img.setIcon(icon);
-        
-        //Add panel
-        JPanel pnl = new JPanel();
-        pnl.setPreferredSize(new Dimension(460,500));
-        pnl.setBackground(Color.red);
-        //Add to frame
-        add(img);
+        //Add 2 panel
+        JPanel pnlTop = new JPanel(new CardLayout());
+        pnlTop.add(img);
+        pnlTop.add(new LoginScreen());
+        this.add(pnlTop,BorderLayout.NORTH);
+        pnlTop.setPreferredSize(new Dimension(660,340));
+//        add(img);
 //        add(new LoginScreen());
-        add(pnl);
-        
+
     }
 }
