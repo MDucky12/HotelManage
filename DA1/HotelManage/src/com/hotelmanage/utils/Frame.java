@@ -10,6 +10,7 @@ import java.awt.CardLayout;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
+import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
@@ -42,25 +43,27 @@ public class Frame extends JFrame {
 //        this.setUndecorated(true);
         this.setLocationRelativeTo(null);
 
-        //
+        //Create Panel
         JPanel pnlWest = new JPanel();
         JPanel pnlEast = new JPanel();
-        JPanel pnlIcon = new JPanel();
-        JPanel pnlBtn01 = new JPanel();
-        JPanel pnlBtn02 = new JPanel();
-        JPanel pnlBtn03 = new JPanel();
-        JPanel pnlBtn04 = new JPanel();
-        JPanel pnlBtn05 = new JPanel();
-        JPanel pnlBtn06 = new JPanel();
-        JPanel pnlBtn07 = new JPanel();
-        JPanel pnlBtn08 = new JPanel();
-        JPanel pnlBtn09 = new JPanel();
-        JPanel pnlBtn10 = new JPanel();
+        JPanel pnlIcon = new JPanel(new FlowLayout());
+        JPanel pnlBtn01 = new JPanel(new FlowLayout());
+        JPanel pnlBtn02 = new JPanel(new FlowLayout());
+        JPanel pnlBtn03 = new JPanel(new FlowLayout());
+        JPanel pnlBtn04 = new JPanel(new FlowLayout());
+        JPanel pnlBtn05 = new JPanel(new FlowLayout());
+        JPanel pnlBtn06 = new JPanel(new FlowLayout());
+        JPanel pnlBtn07 = new JPanel(new FlowLayout());
+        JPanel pnlBtn08 = new JPanel(new FlowLayout());
+        JPanel pnlBtn09 = new JPanel(new FlowLayout());
+        JPanel pnlBtn10 = new JPanel(new FlowLayout());
+        JPanel grIconHotelManage = new JPanel(new FlowLayout());
 
         //
-        JLabel buldingIcon = new JLabel();
+        JLabel buildingIcon = new JLabel();
+        JLabel lbHotelManage = new JLabel();
 
-//        pnlIcon.setBackground(Color.red);
+        //        
         pnlEast.setLayout(new CardLayout());
         pnlWest.setLayout(new BoxLayout(pnlWest, BoxLayout.Y_AXIS));
         pnlWest.add(pnlIcon);
@@ -75,6 +78,7 @@ public class Frame extends JFrame {
         pnlWest.add(pnlBtn09);
         pnlWest.add(pnlBtn10);
 
+        //
         pnlBtn01.setBackground(Color.red);
         pnlBtn02.setBackground(Color.blue);
         pnlBtn03.setBackground(Color.pink);
@@ -96,10 +100,23 @@ public class Frame extends JFrame {
         pnlWest.setBackground(new Color(0x1C1427));
         pnlEast.add(new MainScreen());
 
-        buldingIcon.setIcon(readImg("\\com\\hotelmanage\\icon\\Building.png"));
-        buldingIcon.setText("");
-        pnlIcon.add(buldingIcon);
+        
+        pnlIcon.add(grIconHotelManage);
+        
+        grIconHotelManage.setBackground(Color.red);
+        grIconHotelManage.setPreferredSize(new Dimension(216, 30));
+        grIconHotelManage.setLocation(20, 0);
+        //buldingIcon.setIcon(readImg("\\com\\hotelmanage\\icon\\Building.png"));
+        buildingIcon.setText("Icon");
+        lbHotelManage.setText("HOTEL MANAGE");
+        lbHotelManage.setForeground(new Color(0xFFFFFF));
+        lbHotelManage.setFont(new Font("Barlow Condensed", Font.BOLD, 21));
+        pnlIcon.add(buildingIcon);
+        pnlIcon.add(lbHotelManage);
+        grIconHotelManage.add(buildingIcon);
+        grIconHotelManage.add(lbHotelManage);
 
+        
         //readImg("/com/hotelmanager/image/Building.png");
     }
 
@@ -108,7 +125,7 @@ public class Frame extends JFrame {
             ImageIcon image = new ImageIcon(
                     getClass().getResource(url));
             return image;
-        } catch (Exception e){
+        } catch (Exception e) {
             System.out.println(e);
         }
         return null;
