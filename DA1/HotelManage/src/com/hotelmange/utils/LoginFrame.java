@@ -4,6 +4,7 @@
  */
 package com.hotelmange.utils;
 
+import com.hotelmanage.utils.ImageAvatar;
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
 import java.awt.Color;

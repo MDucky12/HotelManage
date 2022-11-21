@@ -15,6 +15,8 @@ import java.awt.image.BufferedImage;
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JComponent;
+//import javax.swing.JLabel;
+
 
 /**
  *
@@ -43,6 +45,7 @@ public class ImageAvatar extends JComponent {
 
     @Override
     protected void paintComponent(Graphics g) {
+        
         if(icon != null){
             int width = getWidth();
             int height = getHeight();

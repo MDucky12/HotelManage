@@ -6,7 +6,9 @@ package com.hotelmanage.main;
 
 import com.hotelmanage.ui.button.RoomButton;
 import com.hotelmanage.ui.panel.RoomJPanel;
-import com.hotelmange.utils.ImageAvatar;
+import com.hotelmanage.ui.panel.StaffJPanel;
+import com.hotelmanage.utils.ImageAvatar;
+import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -57,9 +59,13 @@ public class MyFrame extends JFrame {
         //create avatar circle
         avata = new ImageAvatar();
         avata.setBounds(200, 10, 100, 100);
-        ImageIcon icon = new ImageIcon("/home/hoang/Desktop/FPOLY/Ky4/DA1/HotelManage/src/com/hotelmanage/image/5918d8e9040516b65f93c75a9c5b8175.jpg");
+        ImageIcon icon = new ImageIcon("/home/hoang/Desktop/FPOLY/HotelManage/DA1/HotelManage/src/com/hotelmanage/image/5918d8e9040516b65f93c75a9c5b8175.jpg");
         avata.setIcon(icon);
         
+//        // test StaffJPanel
+        StaffJPanel stPnl = new StaffJPanel();
+        stPnl.setBounds(100, 100, 200, 200);
+        stPnl.setBackground(Color.red);
         //create frame
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(1000, 500);
@@ -68,7 +74,7 @@ public class MyFrame extends JFrame {
 
         this.add(btn1);
         this.add(avata);
-//        this.add(btn);
+        this.add(stPnl);
         
         
     }   

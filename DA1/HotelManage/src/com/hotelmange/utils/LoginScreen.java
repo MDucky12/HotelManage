@@ -4,6 +4,7 @@
  */
 package com.hotelmange.utils;
 
+import com.hotelmanage.ui.panel.StaffJPanel;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
 import javax.swing.JPanel;
@@ -17,6 +18,10 @@ import java.awt.Image;
  */
 public class LoginScreen extends JPanel {
     private void doDrawing(Graphics g) {
+        
+        StaffJPanel stPnl = new StaffJPanel();
+        
+        
         Graphics2D g2d = (Graphics2D) g;
         RenderingHints rh = new RenderingHints(
                 RenderingHints.KEY_ANTIALIASING,
@@ -27,6 +32,7 @@ public class LoginScreen extends JPanel {
         g2d.setRenderingHints(rh);
         g2d.setPaint(new Color(126, 202, 156));
         g2d.fillRoundRect(0, 0, 660, 770, 0, 0);
+        this.add(stPnl);
     }
 
     @Override
