@@ -321,8 +321,6 @@ public class BookRJPanel extends javax.swing.JPanel {
 
         jLabel9.setText("Tổng tiền");
 
-        jTextField1.setText("jTextField1");
-
         jLabel10.setText("Đồng");
 
         javax.swing.GroupLayout ĐồngLayout = new javax.swing.GroupLayout(Đồng);
