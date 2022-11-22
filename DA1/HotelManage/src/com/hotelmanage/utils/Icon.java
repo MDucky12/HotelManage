@@ -8,17 +8,13 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
-//import java.awt.geom.Ellipse2D;
-import javax.swing.JPanel;
 
 /**
  *
  * @author duchmps23300
  */
-public class MainScreen extends JPanel {
-
-    private static void doDrawingMainScreen(Graphics g) {
-
+public class Icon {
+    private static void doDrawingIcon(Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
 
         RenderingHints rh = new RenderingHints(
@@ -30,17 +26,14 @@ public class MainScreen extends JPanel {
 
         g2d.setRenderingHints(rh);
         
-        g2d.setPaint(new Color(0x1C1427));
-        g2d.fillRoundRect(0, 0, 450, 700, 0, 0);
         g2d.setPaint(new Color(0xFFFFFF));
-        g2d.fillRoundRect(450, 0, 450, 700, 0, 0);
-        g2d.setPaint(new Color(0xFFFFFF));
-        g2d.fillRoundRect(0, 0, 900, 700, 40, 40);
+        g2d.fillRoundRect(0, 0, 40, 40, 40, 40);
 
+        
     }
-
+    
     @Override
     public void paintComponent(Graphics g) {
-        doDrawingMainScreen(g);
+        doDrawingIcon(g);
     }
 }
