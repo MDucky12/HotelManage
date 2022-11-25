@@ -14,9 +14,9 @@ import javax.swing.JPanel;
  *
  * @author duchmps23300
  */
-public class IconBox extends JPanel {
+public class IconBoxNonSelected extends JPanel {
 
-    private static void doDrawingIconBox(Graphics g) {
+    private static void doDrawingIconBoxNonSelected(Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
 
         RenderingHints rh = new RenderingHints(
@@ -27,14 +27,14 @@ public class IconBox extends JPanel {
                 RenderingHints.VALUE_RENDER_QUALITY);
 
         g2d.setRenderingHints(rh);
-        
-        g2d.setPaint(new Color(0x7ECA9C));
+
+        g2d.setPaint(new Color(0xFFFFFF));
         g2d.fillRoundRect(0, 0, 50, 50, 20, 20);
 
-        
     }
+
     @Override
     public void paintComponent(Graphics g) {
-        doDrawingIconBox(g);
+        doDrawingIconBoxNonSelected(g);
     }
 }
