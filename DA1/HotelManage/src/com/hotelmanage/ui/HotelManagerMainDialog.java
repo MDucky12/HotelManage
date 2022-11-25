@@ -134,7 +134,6 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         imageAvatar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/hotelmanage/image/5918d8e9040516b65f93c75a9c5b8175.jpg"))); // NOI18N
         imageAvatar1.setMaximumSize(new java.awt.Dimension(70, 70));
         imageAvatar1.setMinimumSize(new java.awt.Dimension(70, 70));
-        imageAvatar1.setPreferredSize(new java.awt.Dimension(70, 70));
 
         jLabel12.setBackground(new java.awt.Color(255, 255, 255));
         jLabel12.setFont(new java.awt.Font("Barlow Condensed", 1, 28)); // NOI18N
@@ -411,7 +410,8 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pnlStatistical, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, 0))
         );
 
         lbHotelManage.getAccessibleContext().setAccessibleName("HOTEL MANAGER");
