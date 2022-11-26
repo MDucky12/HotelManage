@@ -8,14 +8,13 @@ import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
-import javax.swing.JTextField;
+import javax.swing.JPasswordField;
 
 /**
  *
  * @author Asus
  */
-public class LoginTextBox extends JTextField {
-
+public class PasswordTxt extends JPasswordField{
     private Color color, borderColor;
     private int width, height;
     private int radius, borderRadius;
@@ -36,7 +35,7 @@ public class LoginTextBox extends JTextField {
         this.borderRadius = borderRadius;
     }
 
-    public LoginTextBox() {
+    public PasswordTxt() {
         setColor(new Color(0xFFFFFF));
         setBorderColor(new Color(186, 84, 227));
 //        setBorderColor(new Color(0x000000));
@@ -59,4 +58,5 @@ public class LoginTextBox extends JTextField {
         g2.fillRoundRect(2, 2, getWidth() - 4, getHeight() - 4, radius, radius);
         super.paintComponent(g);
     }
+
 }

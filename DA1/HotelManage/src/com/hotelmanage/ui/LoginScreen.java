@@ -7,6 +7,7 @@ package com.hotelmanage.ui;
 import java.awt.Color;
 import java.awt.Image;
 import javax.swing.ImageIcon;
+import javax.swing.JLabel;
 
 /**
  *
@@ -17,6 +18,11 @@ public class LoginScreen extends javax.swing.JFrame {
     /**
      * Creates new form LoginScreen
      */
+    String picPath = "src\\com\\hotelmanage\\image\\HotelImgIntro.jpg";
+    String viewPath = "src\\com\\hotelmanage\\icon\\view.png";
+    String blindPath = "src\\com\\hotelmanage\\icon\\blind.png";
+    boolean flag = true;
+
     public LoginScreen() {
         initComponents();
         init();
@@ -35,8 +41,9 @@ public class LoginScreen extends javax.swing.JFrame {
         lblIcon = new javax.swing.JLabel();
         btnLogin = new com.hotelmanage.ui.button.LoginButton();
         btnCancel = new com.hotelmanage.ui.button.LoginButton();
-        loginTextBox2 = new com.hotelmanage.ui.button.LoginTextBox();
-        loginTextBox3 = new com.hotelmanage.ui.button.LoginTextBox();
+        accountTxt = new com.hotelmanage.ui.button.AccountTxt();
+        lblView = new javax.swing.JLabel();
+        passTxt = new com.hotelmanage.ui.button.PasswordTxt();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
@@ -47,30 +54,44 @@ public class LoginScreen extends javax.swing.JFrame {
         btnCancel.setText("Cancel");
         btnCancel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
-        loginTextBox2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        loginTextBox2.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        accountTxt.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        accountTxt.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
-        loginTextBox3.setHorizontalAlignment(javax.swing.JTextField.CENTER);
-        loginTextBox3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lblView.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lblView.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblViewMouseClicked(evt);
+            }
+        });
+
+        passTxt.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        passTxt.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passTxtActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnlFrameLayout = new javax.swing.GroupLayout(pnlFrame);
         pnlFrame.setLayout(pnlFrameLayout);
         pnlFrameLayout.setHorizontalGroup(
             pnlFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlFrameLayout.createSequentialGroup()
+                .addGap(150, 150, 150)
+                .addComponent(lblIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlFrameLayout.createSequentialGroup()
                 .addContainerGap(100, Short.MAX_VALUE)
                 .addGroup(pnlFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(pnlFrameLayout.createSequentialGroup()
+                        .addComponent(passTxt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lblView, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(pnlFrameLayout.createSequentialGroup()
                         .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnCancel, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(loginTextBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(loginTextBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(accountTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(100, 100, 100))
-            .addGroup(pnlFrameLayout.createSequentialGroup()
-                .addGap(150, 150, 150)
-                .addComponent(lblIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnlFrameLayout.setVerticalGroup(
             pnlFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -78,9 +99,11 @@ public class LoginScreen extends javax.swing.JFrame {
                 .addGap(60, 60, 60)
                 .addComponent(lblIcon, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28)
-                .addComponent(loginTextBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(accountTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(loginTextBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(pnlFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblView, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(passTxt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(40, 40, 40)
                 .addGroup(pnlFrameLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -101,6 +124,23 @@ public class LoginScreen extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void lblViewMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblViewMouseClicked
+        // TODO add your handling code here:
+        if (flag) {
+            flag = false;
+            setPic(blindPath, lblView);
+            passTxt.setEchoChar((char) 0);
+        } else {
+            flag = true;    
+            setPic(viewPath, lblView);
+            passTxt.setEchoChar('*');
+        }
+    }//GEN-LAST:event_lblViewMouseClicked
+
+    private void passTxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passTxtActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_passTxtActionPerformed
 
     /**
      * @param args the command line arguments
@@ -138,11 +178,12 @@ public class LoginScreen extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private com.hotelmanage.ui.button.AccountTxt accountTxt;
     private com.hotelmanage.ui.button.LoginButton btnCancel;
     private com.hotelmanage.ui.button.LoginButton btnLogin;
     private javax.swing.JLabel lblIcon;
-    private com.hotelmanage.ui.button.LoginTextBox loginTextBox2;
-    private com.hotelmanage.ui.button.LoginTextBox loginTextBox3;
+    private javax.swing.JLabel lblView;
+    private com.hotelmanage.ui.button.PasswordTxt passTxt;
     private javax.swing.JPanel pnlFrame;
     // End of variables declaration//GEN-END:variables
 
@@ -150,15 +191,17 @@ public class LoginScreen extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         this.setTitle("LOGIN");
         this.setResizable(false);
-        pnlFrame.setBackground(new Color(126,202,156));
-        setIcon();
+        pnlFrame.setBackground(new Color(126, 202, 156));
+        setPic(picPath, lblIcon);
+        setPic(viewPath, lblView);
+
     }
-    
-    private void setIcon(){
-        ImageIcon imgStock = new ImageIcon("src\\com\\hotelmanage\\image\\HotelImgIntro.jpg");
+
+    private void setPic(String path, JLabel lbl) {
+        ImageIcon imgStock = new ImageIcon(path);
         Image img = imgStock.getImage();
-        Image imgScaled = img.getScaledInstance(200, 200, Image.SCALE_SMOOTH);
+        Image imgScaled = img.getScaledInstance(lbl.getWidth(), lbl.getHeight(), Image.SCALE_SMOOTH);
         ImageIcon imgResized = new ImageIcon(imgScaled);
-        lblIcon.setIcon(imgResized);
+        lbl.setIcon(imgResized);
     }
 }
