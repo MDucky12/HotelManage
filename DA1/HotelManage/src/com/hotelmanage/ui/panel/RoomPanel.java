@@ -65,9 +65,7 @@ public class RoomPanel extends javax.swing.JFrame {
         btn310 = new com.hotelmanage.ui.button.RoomButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(900, 700));
         setMinimumSize(new java.awt.Dimension(900, 700));
-        setPreferredSize(new java.awt.Dimension(900, 700));
 
         mainScreen1.setMaximumSize(new java.awt.Dimension(900, 700));
         mainScreen1.setMinimumSize(new java.awt.Dimension(900, 700));
@@ -217,7 +215,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn206.setText("roomButton1");
+        btn206.setText("206");
         btn206.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn206.setMaximumSize(new java.awt.Dimension(100, 100));
         btn206.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -229,7 +227,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn205.setText("roomButton1");
+        btn205.setText("205");
         btn205.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn205.setMaximumSize(new java.awt.Dimension(100, 100));
         btn205.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -241,7 +239,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn203.setText("roomButton1");
+        btn203.setText("203");
         btn203.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn203.setMaximumSize(new java.awt.Dimension(100, 100));
         btn203.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -277,7 +275,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn204.setText("roomButton1");
+        btn204.setText("204");
         btn204.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn204.setMaximumSize(new java.awt.Dimension(100, 100));
         btn204.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -289,7 +287,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn209.setText("roomButton1");
+        btn209.setText("209");
         btn209.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn209.setMaximumSize(new java.awt.Dimension(100, 100));
         btn209.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -301,7 +299,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn211.setText("roomButton1");
+        btn211.setText("211");
         btn211.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn211.setMaximumSize(new java.awt.Dimension(100, 100));
         btn211.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -313,7 +311,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn208.setText("roomButton1");
+        btn208.setText("208");
         btn208.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn208.setMaximumSize(new java.awt.Dimension(100, 100));
         btn208.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -325,7 +323,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn207.setText("roomButton1");
+        btn207.setText("207");
         btn207.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn207.setMaximumSize(new java.awt.Dimension(100, 100));
         btn207.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -337,7 +335,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn212.setText("roomButton1");
+        btn212.setText("212");
         btn212.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn212.setMaximumSize(new java.awt.Dimension(100, 100));
         btn212.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -349,7 +347,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn210.setText("roomButton1");
+        btn210.setText("210");
         btn210.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn210.setMaximumSize(new java.awt.Dimension(100, 100));
         btn210.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -361,7 +359,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn303.setText("roomButton1");
+        btn303.setText("303");
         btn303.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn303.setMaximumSize(new java.awt.Dimension(100, 100));
         btn303.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -373,7 +371,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn305.setText("roomButton1");
+        btn305.setText("305");
         btn305.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn305.setMaximumSize(new java.awt.Dimension(100, 100));
         btn305.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -385,7 +383,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn302.setText("roomButton1");
+        btn302.setText("302");
         btn302.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn302.setMaximumSize(new java.awt.Dimension(100, 100));
         btn302.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -397,7 +395,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn301.setText("roomButton1");
+        btn301.setText("301");
         btn301.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn301.setMaximumSize(new java.awt.Dimension(100, 100));
         btn301.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -409,7 +407,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn306.setText("roomButton1");
+        btn306.setText("306");
         btn306.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn306.setMaximumSize(new java.awt.Dimension(100, 100));
         btn306.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -421,7 +419,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn304.setText("roomButton1");
+        btn304.setText("304");
         btn304.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn304.setMaximumSize(new java.awt.Dimension(100, 100));
         btn304.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -433,7 +431,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn309.setText("roomButton1");
+        btn309.setText("309");
         btn309.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn309.setMaximumSize(new java.awt.Dimension(100, 100));
         btn309.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -445,7 +443,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn311.setText("roomButton1");
+        btn311.setText("311");
         btn311.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn311.setMaximumSize(new java.awt.Dimension(100, 100));
         btn311.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -457,7 +455,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn308.setText("roomButton1");
+        btn308.setText("308");
         btn308.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn308.setMaximumSize(new java.awt.Dimension(100, 100));
         btn308.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -469,7 +467,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn307.setText("roomButton1");
+        btn307.setText("307");
         btn307.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn307.setMaximumSize(new java.awt.Dimension(100, 100));
         btn307.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -481,7 +479,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn312.setText("roomButton1");
+        btn312.setText("312");
         btn312.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn312.setMaximumSize(new java.awt.Dimension(100, 100));
         btn312.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -493,7 +491,7 @@ public class RoomPanel extends javax.swing.JFrame {
             }
         });
 
-        btn310.setText("roomButton1");
+        btn310.setText("310");
         btn310.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn310.setMaximumSize(new java.awt.Dimension(100, 100));
         btn310.setMinimumSize(new java.awt.Dimension(100, 100));

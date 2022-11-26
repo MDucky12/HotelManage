@@ -88,24 +88,21 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         iconBoxNonSelected5.setMinimumSize(new java.awt.Dimension(50, 50));
         iconBoxNonSelected5.setPreferredSize(new java.awt.Dimension(50, 50));
 
-        jLabel14.setText("jLabel14");
+        jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel14.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/hotelmanage/icon/account.png"))); // NOI18N
 
         javax.swing.GroupLayout iconBoxNonSelected5Layout = new javax.swing.GroupLayout(iconBoxNonSelected5);
         iconBoxNonSelected5.setLayout(iconBoxNonSelected5Layout);
         iconBoxNonSelected5Layout.setHorizontalGroup(
             iconBoxNonSelected5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(iconBoxNonSelected5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel14)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
         );
         iconBoxNonSelected5Layout.setVerticalGroup(
             iconBoxNonSelected5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(iconBoxNonSelected5Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel14)
-                .addContainerGap(25, Short.MAX_VALUE))
+            .addComponent(jLabel14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
         );
+
+        jLabel14.getAccessibleContext().setAccessibleName("");
 
         javax.swing.GroupLayout pnlRoomLayout = new javax.swing.GroupLayout(pnlRoom);
         pnlRoom.setLayout(pnlRoomLayout);

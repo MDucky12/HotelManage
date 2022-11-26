@@ -27,8 +27,6 @@ public class BookRJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        datecheckIn = new com.hotelmanage.utils.datechooser.DateChooser();
-        datecheckOut = new com.hotelmanage.utils.datechooser.DateChooser();
         jPanel1 = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
@@ -65,12 +63,6 @@ public class BookRJPanel extends javax.swing.JPanel {
         jTextField1 = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
 
-        datecheckIn.setForeground(new java.awt.Color(217, 217, 217));
-        datecheckIn.setTextRefernce(txtCheckIn);
-
-        datecheckOut.setForeground(new java.awt.Color(217, 217, 217));
-        datecheckOut.setTextRefernce(txtCheckOut);
-
         setBackground(new java.awt.Color(255, 255, 255));
         setMinimumSize(new java.awt.Dimension(800, 680));
         setPreferredSize(new java.awt.Dimension(850, 680));
@@ -79,7 +71,7 @@ public class BookRJPanel extends javax.swing.JPanel {
 
         jPanel2.setBackground(new java.awt.Color(126, 202, 156));
 
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel5.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         jLabel5.setText("Danh sách phòng trống");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -102,7 +94,7 @@ public class BookRJPanel extends javax.swing.JPanel {
         jPanel3.setBackground(new java.awt.Color(126, 202, 156));
         jPanel3.setForeground(new java.awt.Color(126, 202, 156));
 
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel6.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         jLabel6.setText("Đồ ăn, nước uống");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -138,16 +130,22 @@ public class BookRJPanel extends javax.swing.JPanel {
                 .addGap(249, 249, 249))
         );
 
+        jLabel2.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         jLabel2.setText("Khách hàng");
 
+        jLabel3.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         jLabel3.setText("Ngày đặt");
 
+        jLabel4.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         jLabel4.setText("Số người");
 
+        jLabel7.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         jLabel7.setText("Ghi chú");
 
+        cbxCustomer.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         cbxCustomer.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
+        jLabel1.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         jLabel1.setText("Ngày trả");
 
         btnCheckIn.setText("...");
@@ -164,8 +162,10 @@ public class BookRJPanel extends javax.swing.JPanel {
             }
         });
 
+        jLabel8.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         jLabel8.setText("Trạng thái");
 
+        cbxStatus.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         cbxStatus.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
         btnAddCus.setText("...");
@@ -243,8 +243,9 @@ public class BookRJPanel extends javax.swing.JPanel {
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
-        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder("Danh sách phòng đặt"));
+        jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Danh sách phòng đặt", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Barlow Condensed", 0, 14))); // NOI18N
 
+        tblCountRoom.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         tblCountRoom.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -282,8 +283,9 @@ public class BookRJPanel extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
-        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder("Danh sách dịch vụ "));
+        jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Danh sách dịch vụ ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Barlow Condensed", 0, 14))); // NOI18N
 
+        tblService.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         tblService.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -319,10 +321,12 @@ public class BookRJPanel extends javax.swing.JPanel {
                     .addComponent(txtSumServiceP)))
         );
 
-        Đồng.setBorder(javax.swing.BorderFactory.createTitledBorder("Tổng thanh toán"));
+        Đồng.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Tổng thanh toán", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Barlow Condensed", 0, 14))); // NOI18N
 
+        jLabel9.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         jLabel9.setText("Tổng tiền");
 
+        jLabel10.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         jLabel10.setText("Đồng");
 
         javax.swing.GroupLayout ĐồngLayout = new javax.swing.GroupLayout(Đồng);
@@ -354,7 +358,7 @@ public class BookRJPanel extends javax.swing.JPanel {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(21, Short.MAX_VALUE)
+                .addContainerGap(108, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(Đồng, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -383,7 +387,7 @@ public class BookRJPanel extends javax.swing.JPanel {
 
     private void btnCheckInActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCheckInActionPerformed
         // TODO add your handling code here:
-        datecheckIn.showPopup();
+        //datecheckIn.showPopup();
     }//GEN-LAST:event_btnCheckInActionPerformed
 
     private void btnCheckOutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCheckOutActionPerformed
@@ -401,8 +405,6 @@ public class BookRJPanel extends javax.swing.JPanel {
     private javax.swing.JButton btnCheckOut;
     private javax.swing.JComboBox<String> cbxCustomer;
     private javax.swing.JComboBox<String> cbxStatus;
-    private com.hotelmanage.utils.datechooser.DateChooser datecheckIn;
-    private com.hotelmanage.utils.datechooser.DateChooser datecheckOut;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
