@@ -41,7 +41,7 @@ CREATE TABLE tb_TypeRoom
 GO
 
 /* went customer buy some food or water */
-CREATE TABLE tb_FBServicfe
+CREATE TABLE tb_FBService
 (
     IDFB int IDENTITY(1,1) PRIMARY KEY NOT NULL,
     NameFB NVARCHAR(30),
@@ -62,7 +62,7 @@ CREATE TABLE tb_Customer
 (
     IDCust int IDENTITY(1,1) PRIMARY KEY NOT NULL,
     Name NVARCHAR(50),
-    IDCard NVARCHAR(12),
+    Identify NVARCHAR(12),
     Phone NVARCHAR(12),
     Email NVARCHAR(50),
     Address NVARCHAR(500)
