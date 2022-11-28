@@ -36,15 +36,15 @@ public class RoomPopUpJDialog extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jLabel10 = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel12 = new javax.swing.JLabel();
-        jLabel13 = new javax.swing.JLabel();
-        jLabel14 = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
+        lbPhoneNumCustomer = new javax.swing.JLabel();
+        lbNameCustomer = new javax.swing.JLabel();
+        lbRoomNum = new javax.swing.JLabel();
+        lbTypeOfRoom = new javax.swing.JLabel();
+        lbnNumberOfPeople = new javax.swing.JLabel();
+        lbTimeCheckin = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        tblService = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -82,29 +82,29 @@ public class RoomPopUpJDialog extends javax.swing.JFrame {
         jLabel9.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         jLabel9.setText("Dịch vụ đã gọi:");
 
-        jLabel10.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
-        jLabel10.setText("...");
+        lbPhoneNumCustomer.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
+        lbPhoneNumCustomer.setText("...");
 
-        jLabel11.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
-        jLabel11.setText("...");
+        lbNameCustomer.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
+        lbNameCustomer.setText("...");
 
-        jLabel12.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
-        jLabel12.setText("...");
+        lbRoomNum.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
+        lbRoomNum.setText("...");
 
-        jLabel13.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
-        jLabel13.setText("...");
+        lbTypeOfRoom.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
+        lbTypeOfRoom.setText("...");
 
-        jLabel14.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
-        jLabel14.setText("...");
+        lbnNumberOfPeople.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
+        lbnNumberOfPeople.setText("...");
 
-        jLabel15.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
-        jLabel15.setText("...");
+        lbTimeCheckin.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
+        lbTimeCheckin.setText("...");
 
         jLabel17.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         jLabel17.setText("...");
 
-        jTable1.setFont(new java.awt.Font("Barlow Condensed", 0, 12)); // NOI18N
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        tblService.setFont(new java.awt.Font("Barlow Condensed", 0, 12)); // NOI18N
+        tblService.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null, null},
                 {null, null, null, null, null},
@@ -115,7 +115,7 @@ public class RoomPopUpJDialog extends javax.swing.JFrame {
                 "Mã dịch vụ", "Loại dịch vụ", "Tên dịch vụ", "Giờ đặt dịch vụ", "Trạng thái"
             }
         ));
-        jScrollPane2.setViewportView(jTable1);
+        jScrollPane2.setViewportView(tblService);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -129,27 +129,27 @@ public class RoomPopUpJDialog extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel11))
+                        .addComponent(lbNameCustomer))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel10))
+                        .addComponent(lbPhoneNumCustomer))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel5)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel13))
+                        .addComponent(lbTypeOfRoom))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel12))
+                        .addComponent(lbRoomNum))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel6)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel14))
+                        .addComponent(lbnNumberOfPeople))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel7)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel15))
+                        .addComponent(lbTimeCheckin))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel8)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -165,27 +165,27 @@ public class RoomPopUpJDialog extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(jLabel11))
+                    .addComponent(lbNameCustomer))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
-                    .addComponent(jLabel10))
+                    .addComponent(lbPhoneNumCustomer))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel4)
-                    .addComponent(jLabel12))
+                    .addComponent(lbRoomNum))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
-                    .addComponent(jLabel13))
+                    .addComponent(lbTypeOfRoom))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel6)
-                    .addComponent(jLabel14))
+                    .addComponent(lbnNumberOfPeople))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
-                    .addComponent(jLabel15))
+                    .addComponent(lbTimeCheckin))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
@@ -248,12 +248,6 @@ public class RoomPopUpJDialog extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -265,6 +259,12 @@ public class RoomPopUpJDialog extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JLabel lbNameCustomer;
+    private javax.swing.JLabel lbPhoneNumCustomer;
+    private javax.swing.JLabel lbRoomNum;
+    private javax.swing.JLabel lbTimeCheckin;
+    private javax.swing.JLabel lbTypeOfRoom;
+    private javax.swing.JLabel lbnNumberOfPeople;
+    private javax.swing.JTable tblService;
     // End of variables declaration//GEN-END:variables
 }
