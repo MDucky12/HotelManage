@@ -26,7 +26,7 @@ public class StaffJPanel extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        imageAvatar1 = new com.hotelmanage.utils.ImageAvatar();
+        imageAvatar = new com.hotelmanage.utils.ImageAvatar();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -40,8 +40,8 @@ public class StaffJPanel extends javax.swing.JPanel {
 
         setMinimumSize(new java.awt.Dimension(850, 680));
 
-        imageAvatar1.setBackground(new java.awt.Color(255, 255, 255));
-        imageAvatar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/hotelmanage/image/5918d8e9040516b65f93c75a9c5b8175.jpg"))); // NOI18N
+        imageAvatar.setBackground(new java.awt.Color(255, 255, 255));
+        imageAvatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/hotelmanage/image/5918d8e9040516b65f93c75a9c5b8175.jpg"))); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Barlow Condensed", 1, 14)); // NOI18N
         jLabel1.setText("Mã nhân viên:");
@@ -89,7 +89,7 @@ public class StaffJPanel extends javax.swing.JPanel {
                     .addComponent(jLabel5)
                     .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 733, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(imageAvatar1, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(imageAvatar, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(76, 76, 76)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -109,7 +109,7 @@ public class StaffJPanel extends javax.swing.JPanel {
                 .addComponent(jLabel6)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(imageAvatar1, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(imageAvatar, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(11, 11, 11)
                         .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -131,7 +131,7 @@ public class StaffJPanel extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.hotelmanage.utils.ImageAvatar imageAvatar1;
+    private com.hotelmanage.utils.ImageAvatar imageAvatar;
     private javax.swing.JEditorPane jEditorPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
