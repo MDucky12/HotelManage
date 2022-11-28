@@ -40,10 +40,8 @@ CREATE TABLE tb_TypeRoom
 )
 GO
 
-
-
 /* went customer buy some food or water */
-CREATE TABLE tb_FBService
+CREATE TABLE tb_FBServicfe
 (
     IDFB int IDENTITY(1,1) PRIMARY KEY NOT NULL,
     NameFB NVARCHAR(30),

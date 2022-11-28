@@ -11,5 +11,22 @@ package com.hotelmanage.object;
 public class Staff {
     private String StaffID;
     private String name;
+
+    public String getStaffID() {
+        return StaffID;
+    }
+
+    public void setStaffID(String StaffID) {
+        this.StaffID = StaffID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    
     
 }
