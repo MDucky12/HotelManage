@@ -3,13 +3,7 @@
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
-    <Property name="maximumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[900, 700]"/>
-    </Property>
     <Property name="minimumSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[900, 700]"/>
-    </Property>
-    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
       <Dimension value="[900, 700]"/>
     </Property>
   </Properties>
@@ -464,7 +458,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn206">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="206"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -485,7 +479,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn205">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="205"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -506,7 +500,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn203">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="203"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -569,7 +563,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn204">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="204"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -590,7 +584,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn209">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="209"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -611,7 +605,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn211">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="211"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -632,7 +626,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn208">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="208"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -653,7 +647,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn207">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="207"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -674,7 +668,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn212">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="212"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -695,7 +689,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn210">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="210"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -716,7 +710,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn303">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="303"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -737,7 +731,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn305">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="305"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -758,7 +752,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn302">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="302"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -779,7 +773,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn301">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="301"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -800,7 +794,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn306">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="306"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -821,7 +815,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn304">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="304"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -842,7 +836,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn309">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="309"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -863,7 +857,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn311">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="311"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -884,7 +878,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn308">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="308"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -905,7 +899,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn307">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="307"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -926,7 +920,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn312">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="312"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
@@ -947,7 +941,7 @@
         </Component>
         <Component class="com.hotelmanage.ui.button.RoomButton" name="btn310">
           <Properties>
-            <Property name="text" type="java.lang.String" value="roomButton1"/>
+            <Property name="text" type="java.lang.String" value="310"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Barlow Condensed" size="18" style="1"/>
             </Property>
