@@ -1,0 +1,86 @@
+﻿create database HotelManagement
+go
+use HotelManagement
+go
+--Chi nhánh ( Khách sạn ) 
+CREATE TABLE tb_Branch
+(
+    IDBr NVARCHAR(10) PRIMARY KEY NOT NULL,
+    NameBr NVARCHAR(50),
+    Phone NVARCHAR(12),
+    Fax NVARCHAR(12),
+    Email NVARCHAR(50),
+    Address NVARCHAR(500)
+)
+go
+--Phòng
+CREATE TABLE tb_Room 
+(
+    --IDRoom INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+    IDRoom INT PRIMARY KEY NOT NULL,
+    Statuss BIT NOT NULL,
+	RoomFloor INT NOT NULL,
+	RoomType INT NOT NULL,
+	RoomPrice FLOAT NOT NULL,
+	IDBranch NVARCHAR(10) NOT NULL FOREIGN KEY REFERENCES tb_Branch(IDBr)
+)
+GO
+--Dịch vụ
+CREATE TABLE tb_Service
+(
+	IDService INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+	NameService NVARCHAR(100),
+	Price FLOAT,
+	IDRoom INT NOT NULL FOREIGN KEY REFERENCES tb_Room(IDRoom),
+	IDBranch NVARCHAR(10) NOT NULL FOREIGN KEY REFERENCES tb_Branch(IDBr)
+)
+GO
+--Khách hàng
+CREATE TABLE tb_Customer
+(
+	IDCus INT IDENTITY(1,1) PRIMARY KEY NOT NULL,
+	Name NVARCHAR(100) NOT NULL,
+	Phone NVARCHAR(12),
+	Email NVARCHAR(50),
+	Identify NVARCHAR(20)
+)
+GO
+--Người dùng
+CREATE TABLE tb_User
+(
+    IDUser NVARCHAR(10) PRIMARY KEY NOT NULL,
+    Username NVARCHAR(50),
+    Pass NVARCHAR(50),
+	Role BIT NOT NULL,
+    IDBr NVARCHAR(10) NOT NULL FOREIGN KEY REFERENCES tb_Branch(IDBr)
+)
+GO
+--Tài sản khách sạn
+CREATE TABLE tb_Property
+(
+	IDProp NVARCHAR(10) PRIMARY KEY NOT NULL,
+	PropName NVARCHAR(100),
+	Price FLOAT,
+	IDBr NVARCHAR(10) NOT NULL FOREIGN KEY REFERENCES tb_Branch(IDBr)
+)
+GO
+--Tài sản theo phòng
+CREATE TABLE tb_RoomProp
+(
+	IDProp NVARCHAR(10) NOT NULL FOREIGN KEY REFERENCES tb_Property(IDProp),
+	IDRoom INT NOT NULL FOREIGN KEY REFERENCES tb_Room(IDRoom),
+	PRIMARY KEY (IDProp, IDRoom)
+)
+GO
+--Đặt phòng
+CREATE TABLE tb_RoomCus
+(
+	IDCus  INT NOT NULL FOREIGN KEY REFERENCES tb_Customer(IDCus),
+	IDRoom INT NOT NULL FOREIGN KEY REFERENCES tb_Room(IDRoom),
+	IDUser NVARCHAR(10) NOT NULL FOREIGN KEY REFERENCES tb_User(IDUser),
+	PRIMARY KEY (IDCus, IDRoom),
+	CheckInDay datetime,
+	CheckOutDay datetime,
+	Amount INT
+)
+GO
