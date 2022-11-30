@@ -113,7 +113,7 @@
       <SubComponents>
         <Component class="javax.swing.JTextField" name="txtSearch">
         </Component>
-        <Component class="com.hotelmanage.ui.button.RoomButton" name="roomButton1">
+        <Component class="com.hotelmanage.utils.RoomButton" name="roomButton1">
           <Properties>
             <Property name="text" type="java.lang.String" value="Search"/>
           </Properties>
@@ -141,50 +141,50 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="com.hotelmanage.ui.button.RoomButton" name="roomButton2">
+    <Component class="com.hotelmanage.utils.RoomButton" name="roomButton2">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/com/hotelmanage/icon/double chevronL.png"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="com.hotelmanage.ui.button.RoomButton" name="roomButton3">
+    <Component class="com.hotelmanage.utils.RoomButton" name="roomButton3">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/com/hotelmanage/icon/left arrow.png"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="com.hotelmanage.ui.button.RoomButton" name="roomButton4">
+    <Component class="com.hotelmanage.utils.RoomButton" name="roomButton4">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/com/hotelmanage/icon/double chevron.png"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="com.hotelmanage.ui.button.RoomButton" name="roomButton5">
+    <Component class="com.hotelmanage.utils.RoomButton" name="roomButton5">
       <Properties>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
           <Image iconType="3" name="/com/hotelmanage/icon/right arrow.png"/>
         </Property>
       </Properties>
     </Component>
-    <Component class="com.hotelmanage.ui.button.RoomButton" name="roomButton6">
+    <Component class="com.hotelmanage.utils.RoomButton" name="roomButton6">
       <Properties>
         <Property name="text" type="java.lang.String" value="New"/>
       </Properties>
     </Component>
-    <Component class="com.hotelmanage.ui.button.RoomButton" name="roomButton7">
+    <Component class="com.hotelmanage.utils.RoomButton" name="roomButton7">
       <Properties>
         <Property name="text" type="java.lang.String" value="Add"/>
       </Properties>
     </Component>
-    <Component class="com.hotelmanage.ui.button.RoomButton" name="roomButton8">
+    <Component class="com.hotelmanage.utils.RoomButton" name="roomButton8">
       <Properties>
         <Property name="text" type="java.lang.String" value="Delete"/>
       </Properties>
     </Component>
-    <Component class="com.hotelmanage.ui.button.RoomButton" name="roomButton9">
+    <Component class="com.hotelmanage.utils.RoomButton" name="roomButton9">
       <Properties>
         <Property name="text" type="java.lang.String" value="Update"/>
       </Properties>

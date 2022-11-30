@@ -1,4 +1,4 @@
-CREATE DATABASE Hotel
+    CREATE DATABASE Hotel
 GO
 
 USE Hotel
