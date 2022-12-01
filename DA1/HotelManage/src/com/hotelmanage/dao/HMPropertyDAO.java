@@ -4,60 +4,59 @@
  */
 package com.hotelmanage.dao;
 
-import com.hotelmanage.entity.HMStaff;
+//import com.hotelmanage.entity.HMProperty;
+import com.hotelmanage.entity.HMProperty;
 import com.hotelmanage.utils.SqlStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 /**
  *
  * @author duchmps23300
  */
-public class HMStaffDAO extends HMDAO<HMStaff, Integer> {
-    String INSERT_SQL = "INSERT INTO ...";
+public class HMPropertyDAO extends HMDAO<HMProperty, String> {
+     String INSERT_SQL = "INSERT INTO ...";
     String UPDATE_SQL = "UPDATE ... SET ...";
     String DELETE_SQL = "DELETE FROM ... WHERE ...";
     String SELECT_ALL_SQL = "SELECT * FROM ...";
     String SELECT_BY_ID_SQL = "SELECT * FROM ... WHERE ...";
-    
-    @Override
-    public void insert(HMStaff entity) {
-        SqlStatement.update(INSERT_SQL, entity.getIdUser(), entity.getUsername(), entity.getPassword(), entity.getIdBranch());
-    }
-
 
     @Override
-    public void update(HMStaff entity) {
-        SqlStatement.update(UPDATE_SQL, entity.getIdUser(), entity.getUsername(), entity.getPassword(), entity.getIdBranch());
+    public void insert(HMProperty entity) {
+        SqlStatement.update(INSERT_SQL, entity.getIdProperty(), entity.getNameProperty(), entity.getPriceProperty(), entity.getIdBranch());
     }
 
     @Override
-    public void delete(Integer id) {
+    public void update(HMProperty entity) {
+        SqlStatement.update(UPDATE_SQL,entity.getIdProperty(), entity.getNameProperty(), entity.getPriceProperty(), entity.getIdBranch());
+    }
+
+    @Override
+    public void delete(String id) {
         SqlStatement.update(DELETE_SQL, id);
     }
 
     @Override
-    public List<HMStaff> selectAll() {
+    public List<HMProperty> selectAll() {
         return this.selectBySQL(SELECT_ALL_SQL);
     }
 
     @Override
-    public HMStaff selectById(Integer id) {
-        List<HMStaff> list = this.selectBySQL(SELECT_BY_ID_SQL, id);
+    public HMProperty selectById(String id) {
+        List<HMProperty> list = this.selectBySQL(SELECT_BY_ID_SQL, id);
         return list.size() > 0 ? list.get(0) : null;
     }
- 
+
     @Override
-    protected List<HMStaff> selectBySQL(String sql, Object... args) {
-        List<HMStaff> list = new ArrayList<HMStaff>();
+    protected List<HMProperty> selectBySQL(String sql, Object... args) {
+        List<HMProperty> list = new ArrayList<HMProperty>();
         try {
             ResultSet rs = null;
             try {
                 rs = SqlStatement.query(sql, args);
                 while (rs.next()) {
-                    HMStaff nv = new HMStaff();
+                    HMProperty nv = new HMProperty();
                     list.add(nv);
                 }
             } finally {
@@ -70,7 +69,7 @@ public class HMStaffDAO extends HMDAO<HMStaff, Integer> {
         return list;
     }
 
-    public List<HMStaff> selectByKeywords(String key) {
+    public List<HMProperty> selectByKeywords(String key) {
         String sql = "SELECT * FROM ... WHERE ... LIKE ?";
         return this.selectBySQL(sql, "%" + key + "%");
     }

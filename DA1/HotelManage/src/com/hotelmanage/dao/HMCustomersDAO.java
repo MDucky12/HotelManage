@@ -4,60 +4,59 @@
  */
 package com.hotelmanage.dao;
 
-import com.hotelmanage.entity.HMStaff;
-import com.hotelmanage.utils.SqlStatement;
+import com.hotelmanage.entity.HMCustomers;
 import java.sql.ResultSet;
+import com.hotelmanage.utils.SqlStatement;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 /**
  *
  * @author duchmps23300
  */
-public class HMStaffDAO extends HMDAO<HMStaff, Integer> {
+public class HMCustomersDAO extends HMDAO<HMCustomers, String> {
+
     String INSERT_SQL = "INSERT INTO ...";
     String UPDATE_SQL = "UPDATE ... SET ...";
     String DELETE_SQL = "DELETE FROM ... WHERE ...";
     String SELECT_ALL_SQL = "SELECT * FROM ...";
     String SELECT_BY_ID_SQL = "SELECT * FROM ... WHERE ...";
-    
-    @Override
-    public void insert(HMStaff entity) {
-        SqlStatement.update(INSERT_SQL, entity.getIdUser(), entity.getUsername(), entity.getPassword(), entity.getIdBranch());
-    }
-
 
     @Override
-    public void update(HMStaff entity) {
-        SqlStatement.update(UPDATE_SQL, entity.getIdUser(), entity.getUsername(), entity.getPassword(), entity.getIdBranch());
+    public void insert(HMCustomers entity) {
+        SqlStatement.update(INSERT_SQL, entity.getIdCustomers(), entity.getNameCustomers(), entity.getPhoneNumCustomers(), entity.getEmailCustomers(), entity.getAddressCustomers());
     }
 
     @Override
-    public void delete(Integer id) {
+    public void update(HMCustomers entity) {
+        SqlStatement.update(UPDATE_SQL, entity.getIdCustomers(), entity.getNameCustomers(), entity.getPhoneNumCustomers(), entity.getEmailCustomers(), entity.getAddressCustomers());
+    }
+
+    @Override
+    public void delete(String id) {
         SqlStatement.update(DELETE_SQL, id);
     }
 
     @Override
-    public List<HMStaff> selectAll() {
+    public List<HMCustomers> selectAll() {
         return this.selectBySQL(SELECT_ALL_SQL);
     }
 
     @Override
-    public HMStaff selectById(Integer id) {
-        List<HMStaff> list = this.selectBySQL(SELECT_BY_ID_SQL, id);
+    public HMCustomers selectById(String id) {
+        List<HMCustomers> list = this.selectBySQL(SELECT_BY_ID_SQL, id);
         return list.size() > 0 ? list.get(0) : null;
     }
- 
+
     @Override
-    protected List<HMStaff> selectBySQL(String sql, Object... args) {
-        List<HMStaff> list = new ArrayList<HMStaff>();
+    protected List<HMCustomers> selectBySQL(String sql, Object... args) {
+        List<HMCustomers> list = new ArrayList<HMCustomers>();
         try {
             ResultSet rs = null;
             try {
                 rs = SqlStatement.query(sql, args);
                 while (rs.next()) {
-                    HMStaff nv = new HMStaff();
+                    HMCustomers nv = new HMCustomers();
                     list.add(nv);
                 }
             } finally {
@@ -70,7 +69,7 @@ public class HMStaffDAO extends HMDAO<HMStaff, Integer> {
         return list;
     }
 
-    public List<HMStaff> selectByKeywords(String key) {
+    public List<HMCustomers> selectByKeywords(String key) {
         String sql = "SELECT * FROM ... WHERE ... LIKE ?";
         return this.selectBySQL(sql, "%" + key + "%");
     }
