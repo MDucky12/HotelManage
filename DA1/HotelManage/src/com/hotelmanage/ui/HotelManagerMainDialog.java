@@ -4,6 +4,8 @@
  */
 package com.hotelmanage.ui;
 
+import java.awt.Color;
+
 /**
  *
  * @author duchmps23300
@@ -30,6 +32,7 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         iconBox2 = new com.hotelmanage.utils.IconBox();
         roomBox1 = new com.hotelmanage.utils.RoomBox();
         roomBox2 = new com.hotelmanage.utils.RoomBox();
+        jPanel4 = new javax.swing.JPanel();
         pnlEast = new javax.swing.JPanel();
         jPanel2 = new javax.swing.JPanel();
         lbHotelManage = new javax.swing.JLabel();
@@ -59,6 +62,22 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         iconBoxNonSelected4 = new com.hotelmanage.utils.IconBoxNonSelected();
         jLabel11 = new javax.swing.JLabel();
         mainScreen1 = new com.hotelmanage.utils.MainScreen();
+        tabs = new javax.swing.JTabbedPane();
+        room1 = new com.hotelmanage.ui.panel.Room();
+        staffJPanel1 = new com.hotelmanage.ui.panel.StaffJPanel();
+        bookRJPanel2 = new com.hotelmanage.ui.panel.BookRJPanel();
+        listStaffJPanel1 = new com.hotelmanage.ui.panel.ListStaffJPanel();
+
+        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
+        jPanel4.setLayout(jPanel4Layout);
+        jPanel4Layout.setHorizontalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
+        jPanel4Layout.setVerticalGroup(
+            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 100, Short.MAX_VALUE)
+        );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -69,6 +88,7 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         pnlEast.setPreferredSize(new java.awt.Dimension(1116, 700));
 
         jPanel2.setBackground(new java.awt.Color(28, 20, 39));
+        jPanel2.setAlignmentX(0.0F);
         jPanel2.setMaximumSize(new java.awt.Dimension(250, 700));
         jPanel2.setMinimumSize(new java.awt.Dimension(250, 700));
 
@@ -79,6 +99,17 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/hotelmanage/icon/Building.png"))); // NOI18N
 
         pnlRoom.setBackground(new java.awt.Color(28, 20, 39));
+        pnlRoom.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pnlRoomMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pnlRoomMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pnlRoomMouseExited(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("Barlow Condensed", 1, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
@@ -104,7 +135,7 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
             .addGroup(iconBoxNonSelected5Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel14)
-                .addContainerGap(28, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout pnlRoomLayout = new javax.swing.GroupLayout(pnlRoom);
@@ -155,7 +186,7 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel12)
                     .addComponent(jLabel13))
-                .addContainerGap(82, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -171,6 +202,11 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         );
 
         pnlRoomOrder.setBackground(new java.awt.Color(28, 20, 39));
+        pnlRoomOrder.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pnlRoomOrderMouseClicked(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Barlow Condensed", 1, 24)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
@@ -223,6 +259,11 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         );
 
         pnlStaff.setBackground(new java.awt.Color(28, 20, 39));
+        pnlStaff.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pnlStaffMouseClicked(evt);
+            }
+        });
 
         jLabel6.setFont(new java.awt.Font("Barlow Condensed", 1, 24)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
@@ -257,20 +298,19 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         pnlStaffLayout.setHorizontalGroup(
             pnlStaffLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlStaffLayout.createSequentialGroup()
-                .addContainerGap(29, Short.MAX_VALUE)
+                .addGap(29, 29, 29)
                 .addComponent(iconBoxNonSelected2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnlStaffLayout.setVerticalGroup(
             pnlStaffLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlStaffLayout.createSequentialGroup()
-                .addContainerGap()
                 .addGroup(pnlStaffLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(iconBoxNonSelected2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 12, Short.MAX_VALUE))
         );
 
         pnlCustomer.setBackground(new java.awt.Color(28, 20, 39));
@@ -379,20 +419,17 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 349, Short.MAX_VALUE)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(pnlStaff, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pnlRoomOrder, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnlCustomer, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(pnlStatistical, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lbHotelManage))
-                    .addComponent(pnlRoom, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(0, 40, Short.MAX_VALUE))
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 346, Short.MAX_VALUE)
+            .addComponent(pnlRoomOrder, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlCustomer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlStatistical, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(15, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lbHotelManage))
+            .addComponent(pnlStaff, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pnlRoom, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -420,17 +457,15 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         mainScreen1.setMaximumSize(new java.awt.Dimension(900, 700));
         mainScreen1.setMinimumSize(new java.awt.Dimension(900, 700));
         mainScreen1.setPreferredSize(new java.awt.Dimension(900, 700));
+        mainScreen1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        javax.swing.GroupLayout mainScreen1Layout = new javax.swing.GroupLayout(mainScreen1);
-        mainScreen1.setLayout(mainScreen1Layout);
-        mainScreen1Layout.setHorizontalGroup(
-            mainScreen1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        mainScreen1Layout.setVerticalGroup(
-            mainScreen1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 700, Short.MAX_VALUE)
-        );
+        tabs.setAlignmentX(0.0F);
+        tabs.addTab("tab2", room1);
+        tabs.addTab("tab3", staffJPanel1);
+        tabs.addTab("tab3", bookRJPanel2);
+        tabs.addTab("tab4", listStaffJPanel1);
+
+        mainScreen1.add(tabs, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 770, 730));
 
         javax.swing.GroupLayout pnlEastLayout = new javax.swing.GroupLayout(pnlEast);
         pnlEast.setLayout(pnlEastLayout);
@@ -438,8 +473,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
             pnlEastLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlEastLayout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
-                .addComponent(mainScreen1, javax.swing.GroupLayout.PREFERRED_SIZE, 825, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(mainScreen1, javax.swing.GroupLayout.PREFERRED_SIZE, 835, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         pnlEastLayout.setVerticalGroup(
             pnlEastLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -466,6 +502,32 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void pnlRoomMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlRoomMouseClicked
+        // TODO add your handling code here:    
+        tabs.setSelectedIndex(0);
+        
+    }//GEN-LAST:event_pnlRoomMouseClicked
+
+    private void pnlRoomOrderMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlRoomOrderMouseClicked
+        // TODO add your handling code here:
+        tabs.setSelectedIndex(2);
+    }//GEN-LAST:event_pnlRoomOrderMouseClicked
+
+    private void pnlStaffMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlStaffMouseClicked
+        // TODO add your handling code here:
+        tabs.setSelectedIndex(1);
+    }//GEN-LAST:event_pnlStaffMouseClicked
+
+    private void pnlRoomMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlRoomMouseEntered
+        // TODO add your handling code here:
+        pnlRoom.setBackground(new Color(0x222));
+    }//GEN-LAST:event_pnlRoomMouseEntered
+
+    private void pnlRoomMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlRoomMouseExited
+        // TODO add your handling code here:
+        pnlRoom.setBackground(null);
+    }//GEN-LAST:event_pnlRoomMouseExited
 
     /**
      * @param args the command line arguments
@@ -503,6 +565,7 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private com.hotelmanage.ui.panel.BookRJPanel bookRJPanel2;
     private com.hotelmanage.utils.IconBox iconBox1;
     private com.hotelmanage.utils.IconBox iconBox2;
     private com.hotelmanage.utils.IconBoxNonSelected iconBoxNonSelected1;
@@ -526,7 +589,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel4;
     private javax.swing.JLabel lbHotelManage;
+    private com.hotelmanage.ui.panel.ListStaffJPanel listStaffJPanel1;
     private com.hotelmanage.utils.MainScreen mainScreen1;
     private javax.swing.JPanel pnlCustomer;
     private javax.swing.JPanel pnlEast;
@@ -534,7 +599,12 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
     private javax.swing.JPanel pnlRoomOrder;
     private javax.swing.JPanel pnlStaff;
     private javax.swing.JPanel pnlStatistical;
+    private com.hotelmanage.ui.panel.Room room1;
     private com.hotelmanage.utils.RoomBox roomBox1;
     private com.hotelmanage.utils.RoomBox roomBox2;
+    private com.hotelmanage.ui.panel.StaffJPanel staffJPanel1;
+    private javax.swing.JTabbedPane tabs;
     // End of variables declaration//GEN-END:variables
+
+    boolean keyPress = false;
 }

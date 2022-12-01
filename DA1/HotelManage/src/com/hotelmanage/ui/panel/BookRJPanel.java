@@ -130,6 +130,8 @@ public class BookRJPanel extends javax.swing.JPanel {
                 .addGap(249, 249, 249))
         );
 
+        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
+
         jLabel2.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         jLabel2.setText("Khách hàng");
 
@@ -243,8 +245,10 @@ public class BookRJPanel extends javax.swing.JPanel {
                 .addContainerGap(16, Short.MAX_VALUE))
         );
 
+        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
         jPanel5.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Danh sách phòng đặt", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Barlow Condensed", 0, 14))); // NOI18N
 
+        tblCountRoom.setBackground(new java.awt.Color(255, 255, 255));
         tblCountRoom.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         tblCountRoom.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -258,6 +262,10 @@ public class BookRJPanel extends javax.swing.JPanel {
             }
         ));
         jScrollPane1.setViewportView(tblCountRoom);
+
+        txtCountRoom.setBackground(new java.awt.Color(255, 255, 255));
+
+        txtSumPrice.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -283,8 +291,10 @@ public class BookRJPanel extends javax.swing.JPanel {
                 .addContainerGap())
         );
 
+        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
         jPanel6.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Danh sách dịch vụ ", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Barlow Condensed", 0, 14))); // NOI18N
 
+        tblService.setBackground(new java.awt.Color(255, 255, 255));
         tblService.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         tblService.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -298,6 +308,10 @@ public class BookRJPanel extends javax.swing.JPanel {
             }
         ));
         jScrollPane2.setViewportView(tblService);
+
+        txtSumServiceP.setBackground(new java.awt.Color(255, 255, 255));
+
+        txtCountService.setBackground(new java.awt.Color(255, 255, 255));
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -321,10 +335,13 @@ public class BookRJPanel extends javax.swing.JPanel {
                     .addComponent(txtSumServiceP)))
         );
 
+        Đồng.setBackground(new java.awt.Color(255, 255, 255));
         Đồng.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Tổng thanh toán", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Barlow Condensed", 0, 14))); // NOI18N
 
         jLabel9.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         jLabel9.setText("Tổng tiền");
+
+        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
 
         jLabel10.setFont(new java.awt.Font("Barlow Condensed", 0, 14)); // NOI18N
         jLabel10.setText("Đồng");
