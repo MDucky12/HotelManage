@@ -41,7 +41,7 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         iconBoxNonSelected5 = new com.hotelmanage.utils.IconBoxNonSelected();
         jLabel14 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
+        pnlInfoStarf = new javax.swing.JPanel();
         imageAvatar1 = new com.hotelmanage.utils.ImageAvatar();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
@@ -63,9 +63,6 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         mainScreen1 = new com.hotelmanage.utils.MainScreen();
         tabs = new javax.swing.JTabbedPane();
-        staffJPanel1 = new com.hotelmanage.ui.panel.StaffJPanel();
-        bookRJPanel2 = new com.hotelmanage.ui.panel.BookRJPanel();
-        listStaffJPanel1 = new com.hotelmanage.ui.panel.ListStaffJPanel();
         RoomJPanel = new javax.swing.JPanel();
         btn307 = new com.hotelmanage.ui.button.RoomButton();
         btn315 = new com.hotelmanage.ui.button.RoomButton();
@@ -103,6 +100,18 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         btn308 = new com.hotelmanage.ui.button.RoomButton();
         btn112 = new com.hotelmanage.ui.button.RoomButton();
         btn206 = new com.hotelmanage.ui.button.RoomButton();
+        StaffJPanel = new javax.swing.JPanel();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable2 = new javax.swing.JTable();
+        jLabel15 = new javax.swing.JLabel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jEditorPane1 = new javax.swing.JEditorPane();
+        jLabel16 = new javax.swing.JLabel();
+        imageAvatar = new com.hotelmanage.utils.ImageAvatar();
+        lblName = new javax.swing.JLabel();
+        lblID = new javax.swing.JLabel();
+        lbbDate = new javax.swing.JLabel();
+        lblRule = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -195,11 +204,11 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel3.setBackground(new java.awt.Color(64, 57, 74));
-        jPanel3.setPreferredSize(new java.awt.Dimension(217, 100));
-        jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
+        pnlInfoStarf.setBackground(new java.awt.Color(64, 57, 74));
+        pnlInfoStarf.setPreferredSize(new java.awt.Dimension(217, 100));
+        pnlInfoStarf.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jPanel3MouseClicked(evt);
+                pnlInfoStarfMouseClicked(evt);
             }
         });
 
@@ -216,26 +225,26 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Staff");
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout pnlInfoStarfLayout = new javax.swing.GroupLayout(pnlInfoStarf);
+        pnlInfoStarf.setLayout(pnlInfoStarfLayout);
+        pnlInfoStarfLayout.setHorizontalGroup(
+            pnlInfoStarfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pnlInfoStarfLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(imageAvatar1, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pnlInfoStarfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel12)
                     .addComponent(jLabel13))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+        pnlInfoStarfLayout.setVerticalGroup(
+            pnlInfoStarfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlInfoStarfLayout.createSequentialGroup()
                 .addGap(17, 17, 17)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(pnlInfoStarfLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(imageAvatar1, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pnlInfoStarfLayout.createSequentialGroup()
                         .addComponent(jLabel12)
                         .addGap(0, 0, 0)
                         .addComponent(jLabel13)))
@@ -466,7 +475,7 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 346, Short.MAX_VALUE)
+            .addComponent(pnlInfoStarf, javax.swing.GroupLayout.DEFAULT_SIZE, 346, Short.MAX_VALUE)
             .addComponent(pnlRoomOrder, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(pnlCustomer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(pnlStatistical, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -496,7 +505,7 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(pnlStatistical, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 155, Short.MAX_VALUE)
-                .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(pnlInfoStarf, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         lbHotelManage.getAccessibleContext().setAccessibleName("HOTEL MANAGER");
@@ -507,14 +516,14 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         mainScreen1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tabs.setAlignmentX(0.0F);
-        tabs.addTab("tab3", staffJPanel1);
-        tabs.addTab("tab3", bookRJPanel2);
-        tabs.addTab("tab4", listStaffJPanel1);
 
         RoomJPanel.setBackground(new java.awt.Color(255, 255, 255));
 
         btn307.setBackground(new java.awt.Color(204, 204, 204));
         btn307.setText("307");
+        btn307.setColor(new java.awt.Color(187, 187, 187));
+        btn307.setColorClick(new java.awt.Color(153, 153, 153));
+        btn307.setColorOver(new java.awt.Color(204, 204, 204));
         btn307.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn307.setMaximumSize(new java.awt.Dimension(100, 100));
         btn307.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -528,6 +537,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn315.setBackground(new java.awt.Color(204, 204, 204));
         btn315.setText("312");
+        btn315.setColor(new java.awt.Color(187, 187, 187));
+        btn315.setColorClick(new java.awt.Color(153, 153, 153));
+        btn315.setColorOver(new java.awt.Color(204, 204, 204));
         btn315.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn315.setMaximumSize(new java.awt.Dimension(100, 100));
         btn315.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -541,6 +553,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn205.setBackground(new java.awt.Color(204, 204, 204));
         btn205.setText("205");
+        btn205.setColor(new java.awt.Color(187, 187, 187));
+        btn205.setColorClick(new java.awt.Color(153, 153, 153));
+        btn205.setColorOver(new java.awt.Color(204, 204, 204));
         btn205.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn205.setMaximumSize(new java.awt.Dimension(100, 100));
         btn205.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -554,6 +569,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn310.setBackground(new java.awt.Color(204, 204, 204));
         btn310.setText("310");
+        btn310.setColor(new java.awt.Color(187, 187, 187));
+        btn310.setColorClick(new java.awt.Color(153, 153, 153));
+        btn310.setColorOver(new java.awt.Color(204, 204, 204));
         btn310.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn310.setMaximumSize(new java.awt.Dimension(100, 100));
         btn310.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -567,6 +585,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn203.setBackground(new java.awt.Color(204, 204, 204));
         btn203.setText("203");
+        btn203.setColor(new java.awt.Color(187, 187, 187));
+        btn203.setColorClick(new java.awt.Color(153, 153, 153));
+        btn203.setColorOver(new java.awt.Color(204, 204, 204));
         btn203.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn203.setMaximumSize(new java.awt.Dimension(100, 100));
         btn203.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -580,6 +601,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn202.setBackground(new java.awt.Color(204, 204, 204));
         btn202.setText("202");
+        btn202.setColor(new java.awt.Color(187, 187, 187));
+        btn202.setColorClick(new java.awt.Color(153, 153, 153));
+        btn202.setColorOver(new java.awt.Color(204, 204, 204));
         btn202.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn202.setMaximumSize(new java.awt.Dimension(100, 100));
         btn202.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -593,6 +617,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn201.setBackground(new java.awt.Color(204, 204, 204));
         btn201.setText("201");
+        btn201.setColor(new java.awt.Color(187, 187, 187));
+        btn201.setColorClick(new java.awt.Color(153, 153, 153));
+        btn201.setColorOver(new java.awt.Color(204, 204, 204));
         btn201.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn201.setMaximumSize(new java.awt.Dimension(100, 100));
         btn201.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -606,6 +633,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn204.setBackground(new java.awt.Color(204, 204, 204));
         btn204.setText("204");
+        btn204.setColor(new java.awt.Color(187, 187, 187));
+        btn204.setColorClick(new java.awt.Color(153, 153, 153));
+        btn204.setColorOver(new java.awt.Color(204, 204, 204));
         btn204.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn204.setMaximumSize(new java.awt.Dimension(100, 100));
         btn204.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -619,6 +649,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn209.setBackground(new java.awt.Color(204, 204, 204));
         btn209.setText("209");
+        btn209.setColor(new java.awt.Color(187, 187, 187));
+        btn209.setColorClick(new java.awt.Color(153, 153, 153));
+        btn209.setColorOver(new java.awt.Color(204, 204, 204));
         btn209.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn209.setMaximumSize(new java.awt.Dimension(100, 100));
         btn209.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -632,6 +665,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn211.setBackground(new java.awt.Color(204, 204, 204));
         btn211.setText("211");
+        btn211.setColor(new java.awt.Color(187, 187, 187));
+        btn211.setColorClick(new java.awt.Color(153, 153, 153));
+        btn211.setColorOver(new java.awt.Color(204, 204, 204));
         btn211.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn211.setMaximumSize(new java.awt.Dimension(100, 100));
         btn211.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -645,6 +681,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn208.setBackground(new java.awt.Color(204, 204, 204));
         btn208.setText("208");
+        btn208.setColor(new java.awt.Color(187, 187, 187));
+        btn208.setColorClick(new java.awt.Color(153, 153, 153));
+        btn208.setColorOver(new java.awt.Color(204, 204, 204));
         btn208.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn208.setMaximumSize(new java.awt.Dimension(100, 100));
         btn208.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -658,6 +697,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn207.setBackground(new java.awt.Color(204, 204, 204));
         btn207.setText("207");
+        btn207.setColor(new java.awt.Color(187, 187, 187));
+        btn207.setColorClick(new java.awt.Color(153, 153, 153));
+        btn207.setColorOver(new java.awt.Color(204, 204, 204));
         btn207.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn207.setMaximumSize(new java.awt.Dimension(100, 100));
         btn207.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -671,6 +713,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn103.setBackground(new java.awt.Color(204, 204, 204));
         btn103.setText("103");
+        btn103.setColor(new java.awt.Color(187, 187, 187));
+        btn103.setColorClick(new java.awt.Color(153, 153, 153));
+        btn103.setColorOver(new java.awt.Color(204, 204, 204));
         btn103.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn103.setMaximumSize(new java.awt.Dimension(100, 100));
         btn103.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -684,6 +729,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn212.setBackground(new java.awt.Color(204, 204, 204));
         btn212.setText("212");
+        btn212.setColor(new java.awt.Color(187, 187, 187));
+        btn212.setColorClick(new java.awt.Color(153, 153, 153));
+        btn212.setColorOver(new java.awt.Color(204, 204, 204));
         btn212.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn212.setMaximumSize(new java.awt.Dimension(100, 100));
         btn212.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -697,6 +745,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn101.setBackground(new java.awt.Color(204, 204, 204));
         btn101.setText("101");
+        btn101.setColor(new java.awt.Color(187, 187, 187));
+        btn101.setColorClick(new java.awt.Color(153, 153, 153));
+        btn101.setColorOver(new java.awt.Color(204, 204, 204));
         btn101.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn101.setMaximumSize(new java.awt.Dimension(100, 100));
         btn101.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -710,6 +761,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn102.setBackground(new java.awt.Color(204, 204, 204));
         btn102.setText("102");
+        btn102.setColor(new java.awt.Color(187, 187, 187));
+        btn102.setColorClick(new java.awt.Color(153, 153, 153));
+        btn102.setColorOver(new java.awt.Color(204, 204, 204));
         btn102.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn102.setMaximumSize(new java.awt.Dimension(100, 100));
         btn102.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -723,6 +777,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn210.setBackground(new java.awt.Color(204, 204, 204));
         btn210.setText("210");
+        btn210.setColor(new java.awt.Color(187, 187, 187));
+        btn210.setColorClick(new java.awt.Color(153, 153, 153));
+        btn210.setColorOver(new java.awt.Color(204, 204, 204));
         btn210.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn210.setMaximumSize(new java.awt.Dimension(100, 100));
         btn210.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -736,6 +793,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn303.setBackground(new java.awt.Color(204, 204, 204));
         btn303.setText("303");
+        btn303.setColor(new java.awt.Color(187, 187, 187));
+        btn303.setColorClick(new java.awt.Color(153, 153, 153));
+        btn303.setColorOver(new java.awt.Color(204, 204, 204));
         btn303.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn303.setMaximumSize(new java.awt.Dimension(100, 100));
         btn303.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -749,6 +809,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn105.setBackground(new java.awt.Color(204, 204, 204));
         btn105.setText("105");
+        btn105.setColor(new java.awt.Color(187, 187, 187));
+        btn105.setColorClick(new java.awt.Color(153, 153, 153));
+        btn105.setColorOver(new java.awt.Color(204, 204, 204));
         btn105.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn105.setMaximumSize(new java.awt.Dimension(100, 100));
         btn105.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -762,6 +825,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn305.setBackground(new java.awt.Color(204, 204, 204));
         btn305.setText("305");
+        btn305.setColor(new java.awt.Color(187, 187, 187));
+        btn305.setColorClick(new java.awt.Color(153, 153, 153));
+        btn305.setColorOver(new java.awt.Color(204, 204, 204));
         btn305.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn305.setMaximumSize(new java.awt.Dimension(100, 100));
         btn305.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -775,6 +841,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn104.setBackground(new java.awt.Color(204, 204, 204));
         btn104.setText("104");
+        btn104.setColor(new java.awt.Color(187, 187, 187));
+        btn104.setColorClick(new java.awt.Color(153, 153, 153));
+        btn104.setColorOver(new java.awt.Color(204, 204, 204));
         btn104.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn104.setMaximumSize(new java.awt.Dimension(100, 100));
         btn104.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -788,6 +857,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn302.setBackground(new java.awt.Color(204, 204, 204));
         btn302.setText("302");
+        btn302.setColor(new java.awt.Color(187, 187, 187));
+        btn302.setColorClick(new java.awt.Color(153, 153, 153));
+        btn302.setColorOver(new java.awt.Color(204, 204, 204));
         btn302.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn302.setMaximumSize(new java.awt.Dimension(100, 100));
         btn302.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -801,6 +873,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn106.setBackground(new java.awt.Color(204, 204, 204));
         btn106.setText("106");
+        btn106.setColor(new java.awt.Color(187, 187, 187));
+        btn106.setColorClick(new java.awt.Color(153, 153, 153));
+        btn106.setColorOver(new java.awt.Color(204, 204, 204));
         btn106.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn106.setMaximumSize(new java.awt.Dimension(100, 100));
         btn106.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -814,6 +889,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn301.setBackground(new java.awt.Color(204, 204, 204));
         btn301.setText("301");
+        btn301.setColor(new java.awt.Color(187, 187, 187));
+        btn301.setColorClick(new java.awt.Color(153, 153, 153));
+        btn301.setColorOver(new java.awt.Color(204, 204, 204));
         btn301.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn301.setMaximumSize(new java.awt.Dimension(100, 100));
         btn301.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -827,6 +905,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn107.setBackground(new java.awt.Color(204, 204, 204));
         btn107.setText("107");
+        btn107.setColor(new java.awt.Color(187, 187, 187));
+        btn107.setColorClick(new java.awt.Color(153, 153, 153));
+        btn107.setColorOver(new java.awt.Color(204, 204, 204));
         btn107.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn107.setMaximumSize(new java.awt.Dimension(100, 100));
         btn107.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -840,6 +921,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn306.setBackground(new java.awt.Color(204, 204, 204));
         btn306.setText("306");
+        btn306.setColor(new java.awt.Color(187, 187, 187));
+        btn306.setColorClick(new java.awt.Color(153, 153, 153));
+        btn306.setColorOver(new java.awt.Color(204, 204, 204));
         btn306.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn306.setMaximumSize(new java.awt.Dimension(100, 100));
         btn306.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -853,6 +937,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn108.setBackground(new java.awt.Color(204, 204, 204));
         btn108.setText("108");
+        btn108.setColor(new java.awt.Color(187, 187, 187));
+        btn108.setColorClick(new java.awt.Color(153, 153, 153));
+        btn108.setColorOver(new java.awt.Color(204, 204, 204));
         btn108.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn108.setMaximumSize(new java.awt.Dimension(100, 100));
         btn108.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -866,6 +953,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn304.setBackground(new java.awt.Color(204, 204, 204));
         btn304.setText("304");
+        btn304.setColor(new java.awt.Color(187, 187, 187));
+        btn304.setColorClick(new java.awt.Color(153, 153, 153));
+        btn304.setColorOver(new java.awt.Color(204, 204, 204));
         btn304.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn304.setMaximumSize(new java.awt.Dimension(100, 100));
         btn304.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -879,6 +969,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn109.setBackground(new java.awt.Color(204, 204, 204));
         btn109.setText("109");
+        btn109.setColor(new java.awt.Color(187, 187, 187));
+        btn109.setColorClick(new java.awt.Color(153, 153, 153));
+        btn109.setColorOver(new java.awt.Color(204, 204, 204));
         btn109.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn109.setMaximumSize(new java.awt.Dimension(100, 100));
         btn109.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -892,6 +985,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn309.setBackground(new java.awt.Color(204, 204, 204));
         btn309.setText("309");
+        btn309.setColor(new java.awt.Color(187, 187, 187));
+        btn309.setColorClick(new java.awt.Color(153, 153, 153));
+        btn309.setColorOver(new java.awt.Color(204, 204, 204));
         btn309.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn309.setMaximumSize(new java.awt.Dimension(100, 100));
         btn309.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -905,6 +1001,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn110.setBackground(new java.awt.Color(204, 204, 204));
         btn110.setText("110");
+        btn110.setColor(new java.awt.Color(187, 187, 187));
+        btn110.setColorClick(new java.awt.Color(153, 153, 153));
+        btn110.setColorOver(new java.awt.Color(204, 204, 204));
         btn110.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn110.setMaximumSize(new java.awt.Dimension(100, 100));
         btn110.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -918,6 +1017,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn311.setBackground(new java.awt.Color(204, 204, 204));
         btn311.setText("311");
+        btn311.setColor(new java.awt.Color(187, 187, 187));
+        btn311.setColorClick(new java.awt.Color(153, 153, 153));
+        btn311.setColorOver(new java.awt.Color(204, 204, 204));
         btn311.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn311.setMaximumSize(new java.awt.Dimension(100, 100));
         btn311.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -931,6 +1033,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn111.setBackground(new java.awt.Color(204, 204, 204));
         btn111.setText("111");
+        btn111.setColor(new java.awt.Color(187, 187, 187));
+        btn111.setColorClick(new java.awt.Color(153, 153, 153));
+        btn111.setColorOver(new java.awt.Color(204, 204, 204));
         btn111.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn111.setMaximumSize(new java.awt.Dimension(100, 100));
         btn111.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -944,6 +1049,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn308.setBackground(new java.awt.Color(204, 204, 204));
         btn308.setText("308");
+        btn308.setColor(new java.awt.Color(187, 187, 187));
+        btn308.setColorClick(new java.awt.Color(153, 153, 153));
+        btn308.setColorOver(new java.awt.Color(204, 204, 204));
         btn308.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn308.setMaximumSize(new java.awt.Dimension(100, 100));
         btn308.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -957,6 +1065,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn112.setBackground(new java.awt.Color(204, 204, 204));
         btn112.setText("112");
+        btn112.setColor(new java.awt.Color(187, 187, 187));
+        btn112.setColorClick(new java.awt.Color(153, 153, 153));
+        btn112.setColorOver(new java.awt.Color(204, 204, 204));
         btn112.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn112.setMaximumSize(new java.awt.Dimension(100, 100));
         btn112.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -970,6 +1081,9 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         btn206.setBackground(new java.awt.Color(204, 204, 204));
         btn206.setText("206");
+        btn206.setColor(new java.awt.Color(187, 187, 187));
+        btn206.setColorClick(new java.awt.Color(153, 153, 153));
+        btn206.setColorOver(new java.awt.Color(204, 204, 204));
         btn206.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
         btn206.setMaximumSize(new java.awt.Dimension(100, 100));
         btn206.setMinimumSize(new java.awt.Dimension(100, 100));
@@ -1118,6 +1232,103 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         tabs.addTab("tab4", RoomJPanel);
 
+        StaffJPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        jTable2.setBackground(new java.awt.Color(255, 255, 255));
+        jTable2.setFont(new java.awt.Font("Barlow Condensed", 0, 12)); // NOI18N
+        jTable2.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jTable2.setSelectionBackground(new java.awt.Color(204, 204, 204));
+        jScrollPane2.setViewportView(jTable2);
+
+        jLabel15.setFont(new java.awt.Font("Barlow Condensed", 1, 14)); // NOI18N
+        jLabel15.setText("Ghi chú");
+
+        jEditorPane1.setBackground(new java.awt.Color(255, 255, 255));
+        jScrollPane3.setViewportView(jEditorPane1);
+
+        jLabel16.setFont(new java.awt.Font("Barlow Condensed", 1, 24)); // NOI18N
+        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel16.setText("THÔNG TIN  NHÂN VIÊN");
+
+        imageAvatar.setBackground(new java.awt.Color(255, 255, 255));
+        imageAvatar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/hotelmanage/image/5918d8e9040516b65f93c75a9c5b8175.jpg"))); // NOI18N
+
+        lblName.setFont(new java.awt.Font("Barlow Condensed", 1, 14)); // NOI18N
+        lblName.setText("Họ và tên:");
+
+        lblID.setFont(new java.awt.Font("Barlow Condensed", 1, 14)); // NOI18N
+        lblID.setText("Mã nhân viên:");
+
+        lbbDate.setFont(new java.awt.Font("Barlow Condensed", 1, 14)); // NOI18N
+        lbbDate.setText("Ngày sinh: ");
+
+        lblRule.setFont(new java.awt.Font("Barlow Condensed", 1, 14)); // NOI18N
+        lblRule.setText("Chức vụ: ");
+
+        javax.swing.GroupLayout StaffJPanelLayout = new javax.swing.GroupLayout(StaffJPanel);
+        StaffJPanel.setLayout(StaffJPanelLayout);
+        StaffJPanelLayout.setHorizontalGroup(
+            StaffJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(StaffJPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(StaffJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(StaffJPanelLayout.createSequentialGroup()
+                        .addGroup(StaffJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jScrollPane3)
+                            .addComponent(jLabel15)
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 733, Short.MAX_VALUE)
+                            .addGroup(StaffJPanelLayout.createSequentialGroup()
+                                .addComponent(imageAvatar, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(76, 76, 76)
+                                .addGroup(StaffJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(lblID, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblName, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lbbDate, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(lblRule, javax.swing.GroupLayout.PREFERRED_SIZE, 322, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addContainerGap(11, Short.MAX_VALUE))
+                    .addGroup(StaffJPanelLayout.createSequentialGroup()
+                        .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(19, 19, 19))))
+        );
+        StaffJPanelLayout.setVerticalGroup(
+            StaffJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(StaffJPanelLayout.createSequentialGroup()
+                .addGap(21, 21, 21)
+                .addComponent(jLabel16)
+                .addGroup(StaffJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(StaffJPanelLayout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(lblID, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblName, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(lbbDate, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(lblRule, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(StaffJPanelLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(imageAvatar, javax.swing.GroupLayout.PREFERRED_SIZE, 229, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(30, 30, 30)
+                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel15)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        tabs.addTab("tab2", StaffJPanel);
+
         mainScreen1.add(tabs, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, -30, 750, 730));
 
         javax.swing.GroupLayout pnlEastLayout = new javax.swing.GroupLayout(pnlEast);
@@ -1158,7 +1369,7 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
     private void pnlRoomMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlRoomMouseClicked
         // TODO add your handling code here:    
-        tabs.setSelectedIndex(3);
+        tabs.setSelectedIndex(0);
         
     }//GEN-LAST:event_pnlRoomMouseClicked
 
@@ -1336,10 +1547,10 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         pnlRoomOrder.setBackground(mouseExited);
     }//GEN-LAST:event_pnlRoomOrderMouseExited
 
-    private void jPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseClicked
+    private void pnlInfoStarfMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlInfoStarfMouseClicked
         // TODO add your handling code here:
-        tabs.setSelectedIndex(0);
-    }//GEN-LAST:event_jPanel3MouseClicked
+        tabs.setSelectedIndex(1);
+    }//GEN-LAST:event_pnlInfoStarfMouseClicked
 
     /**
      * @param args the command line arguments
@@ -1378,7 +1589,7 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel RoomJPanel;
-    private com.hotelmanage.ui.panel.BookRJPanel bookRJPanel2;
+    private javax.swing.JPanel StaffJPanel;
     private com.hotelmanage.ui.button.RoomButton btn101;
     private com.hotelmanage.ui.button.RoomButton btn102;
     private com.hotelmanage.ui.button.RoomButton btn103;
@@ -1422,13 +1633,17 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
     private com.hotelmanage.utils.IconBoxNonSelected iconBoxNonSelected3;
     private com.hotelmanage.utils.IconBoxNonSelected iconBoxNonSelected4;
     private com.hotelmanage.utils.IconBoxNonSelected iconBoxNonSelected5;
+    private com.hotelmanage.utils.ImageAvatar imageAvatar;
     private com.hotelmanage.utils.ImageAvatar imageAvatar1;
+    private javax.swing.JEditorPane jEditorPane1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -1437,20 +1652,25 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JTable jTable2;
     private javax.swing.JLabel lbHotelManage;
-    private com.hotelmanage.ui.panel.ListStaffJPanel listStaffJPanel1;
+    private javax.swing.JLabel lbbDate;
+    private javax.swing.JLabel lblID;
+    private javax.swing.JLabel lblName;
+    private javax.swing.JLabel lblRule;
     private com.hotelmanage.utils.MainScreen mainScreen1;
     private javax.swing.JPanel pnlCustomer;
     private javax.swing.JPanel pnlEast;
+    private javax.swing.JPanel pnlInfoStarf;
     private javax.swing.JPanel pnlRoom;
     private javax.swing.JPanel pnlRoomOrder;
     private javax.swing.JPanel pnlStaff;
     private javax.swing.JPanel pnlStatistical;
     private com.hotelmanage.utils.RoomBox roomBox1;
     private com.hotelmanage.utils.RoomBox roomBox2;
-    private com.hotelmanage.ui.panel.StaffJPanel staffJPanel1;
     private javax.swing.JTabbedPane tabs;
     // End of variables declaration//GEN-END:variables
 
