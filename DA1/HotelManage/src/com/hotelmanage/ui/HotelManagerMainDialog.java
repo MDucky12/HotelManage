@@ -63,10 +63,46 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         mainScreen1 = new com.hotelmanage.utils.MainScreen();
         tabs = new javax.swing.JTabbedPane();
-        room1 = new com.hotelmanage.ui.panel.Room();
         staffJPanel1 = new com.hotelmanage.ui.panel.StaffJPanel();
         bookRJPanel2 = new com.hotelmanage.ui.panel.BookRJPanel();
         listStaffJPanel1 = new com.hotelmanage.ui.panel.ListStaffJPanel();
+        RoomJPanel = new javax.swing.JPanel();
+        btn307 = new com.hotelmanage.ui.button.RoomButton();
+        btn315 = new com.hotelmanage.ui.button.RoomButton();
+        btn205 = new com.hotelmanage.ui.button.RoomButton();
+        btn310 = new com.hotelmanage.ui.button.RoomButton();
+        btn203 = new com.hotelmanage.ui.button.RoomButton();
+        btn202 = new com.hotelmanage.ui.button.RoomButton();
+        btn201 = new com.hotelmanage.ui.button.RoomButton();
+        btn204 = new com.hotelmanage.ui.button.RoomButton();
+        btn209 = new com.hotelmanage.ui.button.RoomButton();
+        btn211 = new com.hotelmanage.ui.button.RoomButton();
+        btn208 = new com.hotelmanage.ui.button.RoomButton();
+        btn207 = new com.hotelmanage.ui.button.RoomButton();
+        btn103 = new com.hotelmanage.ui.button.RoomButton();
+        btn212 = new com.hotelmanage.ui.button.RoomButton();
+        btn101 = new com.hotelmanage.ui.button.RoomButton();
+        btn102 = new com.hotelmanage.ui.button.RoomButton();
+        btn210 = new com.hotelmanage.ui.button.RoomButton();
+        btn303 = new com.hotelmanage.ui.button.RoomButton();
+        btn105 = new com.hotelmanage.ui.button.RoomButton();
+        btn305 = new com.hotelmanage.ui.button.RoomButton();
+        btn104 = new com.hotelmanage.ui.button.RoomButton();
+        btn302 = new com.hotelmanage.ui.button.RoomButton();
+        btn106 = new com.hotelmanage.ui.button.RoomButton();
+        btn301 = new com.hotelmanage.ui.button.RoomButton();
+        btn107 = new com.hotelmanage.ui.button.RoomButton();
+        btn306 = new com.hotelmanage.ui.button.RoomButton();
+        btn108 = new com.hotelmanage.ui.button.RoomButton();
+        btn304 = new com.hotelmanage.ui.button.RoomButton();
+        btn109 = new com.hotelmanage.ui.button.RoomButton();
+        btn309 = new com.hotelmanage.ui.button.RoomButton();
+        btn110 = new com.hotelmanage.ui.button.RoomButton();
+        btn311 = new com.hotelmanage.ui.button.RoomButton();
+        btn111 = new com.hotelmanage.ui.button.RoomButton();
+        btn308 = new com.hotelmanage.ui.button.RoomButton();
+        btn112 = new com.hotelmanage.ui.button.RoomButton();
+        btn206 = new com.hotelmanage.ui.button.RoomButton();
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -161,6 +197,11 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
         jPanel3.setBackground(new java.awt.Color(64, 57, 74));
         jPanel3.setPreferredSize(new java.awt.Dimension(217, 100));
+        jPanel3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jPanel3MouseClicked(evt);
+            }
+        });
 
         imageAvatar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/hotelmanage/image/5918d8e9040516b65f93c75a9c5b8175.jpg"))); // NOI18N
         imageAvatar1.setMaximumSize(new java.awt.Dimension(70, 70));
@@ -205,6 +246,12 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         pnlRoomOrder.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 pnlRoomOrderMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                pnlRoomOrderMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                pnlRoomOrderMouseExited(evt);
             }
         });
 
@@ -460,10 +507,616 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         mainScreen1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         tabs.setAlignmentX(0.0F);
-        tabs.addTab("tab2", room1);
         tabs.addTab("tab3", staffJPanel1);
         tabs.addTab("tab3", bookRJPanel2);
         tabs.addTab("tab4", listStaffJPanel1);
+
+        RoomJPanel.setBackground(new java.awt.Color(255, 255, 255));
+
+        btn307.setBackground(new java.awt.Color(204, 204, 204));
+        btn307.setText("307");
+        btn307.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn307.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn307.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn307.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn307.setRadius(20);
+        btn307.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn307ActionPerformed(evt);
+            }
+        });
+
+        btn315.setBackground(new java.awt.Color(204, 204, 204));
+        btn315.setText("312");
+        btn315.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn315.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn315.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn315.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn315.setRadius(20);
+        btn315.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn315ActionPerformed(evt);
+            }
+        });
+
+        btn205.setBackground(new java.awt.Color(204, 204, 204));
+        btn205.setText("205");
+        btn205.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn205.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn205.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn205.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn205.setRadius(20);
+        btn205.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn205ActionPerformed(evt);
+            }
+        });
+
+        btn310.setBackground(new java.awt.Color(204, 204, 204));
+        btn310.setText("310");
+        btn310.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn310.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn310.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn310.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn310.setRadius(20);
+        btn310.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn310ActionPerformed(evt);
+            }
+        });
+
+        btn203.setBackground(new java.awt.Color(204, 204, 204));
+        btn203.setText("203");
+        btn203.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn203.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn203.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn203.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn203.setRadius(20);
+        btn203.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn203ActionPerformed(evt);
+            }
+        });
+
+        btn202.setBackground(new java.awt.Color(204, 204, 204));
+        btn202.setText("202");
+        btn202.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn202.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn202.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn202.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn202.setRadius(20);
+        btn202.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn202ActionPerformed(evt);
+            }
+        });
+
+        btn201.setBackground(new java.awt.Color(204, 204, 204));
+        btn201.setText("201");
+        btn201.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn201.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn201.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn201.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn201.setRadius(20);
+        btn201.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn201ActionPerformed(evt);
+            }
+        });
+
+        btn204.setBackground(new java.awt.Color(204, 204, 204));
+        btn204.setText("204");
+        btn204.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn204.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn204.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn204.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn204.setRadius(20);
+        btn204.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn204ActionPerformed(evt);
+            }
+        });
+
+        btn209.setBackground(new java.awt.Color(204, 204, 204));
+        btn209.setText("209");
+        btn209.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn209.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn209.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn209.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn209.setRadius(20);
+        btn209.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn209ActionPerformed(evt);
+            }
+        });
+
+        btn211.setBackground(new java.awt.Color(204, 204, 204));
+        btn211.setText("211");
+        btn211.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn211.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn211.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn211.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn211.setRadius(20);
+        btn211.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn211ActionPerformed(evt);
+            }
+        });
+
+        btn208.setBackground(new java.awt.Color(204, 204, 204));
+        btn208.setText("208");
+        btn208.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn208.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn208.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn208.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn208.setRadius(20);
+        btn208.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn208ActionPerformed(evt);
+            }
+        });
+
+        btn207.setBackground(new java.awt.Color(204, 204, 204));
+        btn207.setText("207");
+        btn207.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn207.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn207.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn207.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn207.setRadius(20);
+        btn207.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn207ActionPerformed(evt);
+            }
+        });
+
+        btn103.setBackground(new java.awt.Color(204, 204, 204));
+        btn103.setText("103");
+        btn103.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn103.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn103.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn103.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn103.setRadius(20);
+        btn103.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn103ActionPerformed(evt);
+            }
+        });
+
+        btn212.setBackground(new java.awt.Color(204, 204, 204));
+        btn212.setText("212");
+        btn212.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn212.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn212.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn212.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn212.setRadius(20);
+        btn212.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn212ActionPerformed(evt);
+            }
+        });
+
+        btn101.setBackground(new java.awt.Color(204, 204, 204));
+        btn101.setText("101");
+        btn101.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn101.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn101.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn101.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn101.setRadius(20);
+        btn101.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn101ActionPerformed(evt);
+            }
+        });
+
+        btn102.setBackground(new java.awt.Color(204, 204, 204));
+        btn102.setText("102");
+        btn102.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn102.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn102.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn102.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn102.setRadius(20);
+        btn102.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn102ActionPerformed(evt);
+            }
+        });
+
+        btn210.setBackground(new java.awt.Color(204, 204, 204));
+        btn210.setText("210");
+        btn210.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn210.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn210.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn210.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn210.setRadius(20);
+        btn210.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn210ActionPerformed(evt);
+            }
+        });
+
+        btn303.setBackground(new java.awt.Color(204, 204, 204));
+        btn303.setText("303");
+        btn303.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn303.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn303.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn303.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn303.setRadius(20);
+        btn303.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn303ActionPerformed(evt);
+            }
+        });
+
+        btn105.setBackground(new java.awt.Color(204, 204, 204));
+        btn105.setText("105");
+        btn105.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn105.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn105.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn105.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn105.setRadius(20);
+        btn105.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn105ActionPerformed(evt);
+            }
+        });
+
+        btn305.setBackground(new java.awt.Color(204, 204, 204));
+        btn305.setText("305");
+        btn305.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn305.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn305.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn305.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn305.setRadius(20);
+        btn305.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn305ActionPerformed(evt);
+            }
+        });
+
+        btn104.setBackground(new java.awt.Color(204, 204, 204));
+        btn104.setText("104");
+        btn104.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn104.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn104.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn104.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn104.setRadius(20);
+        btn104.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn104ActionPerformed(evt);
+            }
+        });
+
+        btn302.setBackground(new java.awt.Color(204, 204, 204));
+        btn302.setText("302");
+        btn302.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn302.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn302.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn302.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn302.setRadius(20);
+        btn302.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn302ActionPerformed(evt);
+            }
+        });
+
+        btn106.setBackground(new java.awt.Color(204, 204, 204));
+        btn106.setText("106");
+        btn106.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn106.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn106.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn106.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn106.setRadius(20);
+        btn106.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn106ActionPerformed(evt);
+            }
+        });
+
+        btn301.setBackground(new java.awt.Color(204, 204, 204));
+        btn301.setText("301");
+        btn301.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn301.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn301.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn301.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn301.setRadius(20);
+        btn301.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn301ActionPerformed(evt);
+            }
+        });
+
+        btn107.setBackground(new java.awt.Color(204, 204, 204));
+        btn107.setText("107");
+        btn107.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn107.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn107.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn107.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn107.setRadius(20);
+        btn107.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn107ActionPerformed(evt);
+            }
+        });
+
+        btn306.setBackground(new java.awt.Color(204, 204, 204));
+        btn306.setText("306");
+        btn306.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn306.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn306.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn306.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn306.setRadius(20);
+        btn306.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn306ActionPerformed(evt);
+            }
+        });
+
+        btn108.setBackground(new java.awt.Color(204, 204, 204));
+        btn108.setText("108");
+        btn108.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn108.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn108.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn108.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn108.setRadius(20);
+        btn108.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn108ActionPerformed(evt);
+            }
+        });
+
+        btn304.setBackground(new java.awt.Color(204, 204, 204));
+        btn304.setText("304");
+        btn304.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn304.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn304.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn304.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn304.setRadius(20);
+        btn304.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn304ActionPerformed(evt);
+            }
+        });
+
+        btn109.setBackground(new java.awt.Color(204, 204, 204));
+        btn109.setText("109");
+        btn109.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn109.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn109.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn109.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn109.setRadius(20);
+        btn109.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn109ActionPerformed(evt);
+            }
+        });
+
+        btn309.setBackground(new java.awt.Color(204, 204, 204));
+        btn309.setText("309");
+        btn309.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn309.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn309.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn309.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn309.setRadius(20);
+        btn309.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn309ActionPerformed(evt);
+            }
+        });
+
+        btn110.setBackground(new java.awt.Color(204, 204, 204));
+        btn110.setText("110");
+        btn110.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn110.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn110.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn110.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn110.setRadius(20);
+        btn110.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn110ActionPerformed(evt);
+            }
+        });
+
+        btn311.setBackground(new java.awt.Color(204, 204, 204));
+        btn311.setText("311");
+        btn311.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn311.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn311.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn311.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn311.setRadius(20);
+        btn311.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn311ActionPerformed(evt);
+            }
+        });
+
+        btn111.setBackground(new java.awt.Color(204, 204, 204));
+        btn111.setText("111");
+        btn111.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn111.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn111.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn111.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn111.setRadius(20);
+        btn111.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn111ActionPerformed(evt);
+            }
+        });
+
+        btn308.setBackground(new java.awt.Color(204, 204, 204));
+        btn308.setText("308");
+        btn308.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn308.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn308.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn308.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn308.setRadius(20);
+        btn308.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn308ActionPerformed(evt);
+            }
+        });
+
+        btn112.setBackground(new java.awt.Color(204, 204, 204));
+        btn112.setText("112");
+        btn112.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn112.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn112.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn112.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn112.setRadius(20);
+        btn112.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn112ActionPerformed(evt);
+            }
+        });
+
+        btn206.setBackground(new java.awt.Color(204, 204, 204));
+        btn206.setText("206");
+        btn206.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
+        btn206.setMaximumSize(new java.awt.Dimension(100, 100));
+        btn206.setMinimumSize(new java.awt.Dimension(100, 100));
+        btn206.setPreferredSize(new java.awt.Dimension(100, 100));
+        btn206.setRadius(20);
+        btn206.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btn206ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout RoomJPanelLayout = new javax.swing.GroupLayout(RoomJPanel);
+        RoomJPanel.setLayout(RoomJPanelLayout);
+        RoomJPanelLayout.setHorizontalGroup(
+            RoomJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(RoomJPanelLayout.createSequentialGroup()
+                .addGap(33, 33, 33)
+                .addGroup(RoomJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(RoomJPanelLayout.createSequentialGroup()
+                        .addComponent(btn101, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn102, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn103, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn104, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn105, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn106, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(RoomJPanelLayout.createSequentialGroup()
+                        .addComponent(btn107, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn108, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn109, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn110, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn111, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn112, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RoomJPanelLayout.createSequentialGroup()
+                        .addComponent(btn201, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn202, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn203, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn204, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn205, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn206, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RoomJPanelLayout.createSequentialGroup()
+                        .addComponent(btn207, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn208, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn209, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn210, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn211, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn212, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(RoomJPanelLayout.createSequentialGroup()
+                        .addComponent(btn301, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn302, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn303, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn304, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn305, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn306, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RoomJPanelLayout.createSequentialGroup()
+                        .addComponent(btn307, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn308, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn309, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn310, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn311, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btn315, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(47, Short.MAX_VALUE))
+        );
+        RoomJPanelLayout.setVerticalGroup(
+            RoomJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RoomJPanelLayout.createSequentialGroup()
+                .addContainerGap(20, Short.MAX_VALUE)
+                .addGroup(RoomJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn103, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn101, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn104, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn102, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn105, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn106, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(RoomJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn109, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn107, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn110, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn108, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn111, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn112, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(RoomJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn203, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn201, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn204, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn202, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn205, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn206, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(RoomJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn209, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn207, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn210, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn208, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn211, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn212, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(RoomJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn303, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn301, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn304, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn302, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn305, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn306, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(RoomJPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btn309, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn307, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn310, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn308, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn311, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn315, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(19, 19, 19))
+        );
+
+        tabs.addTab("tab4", RoomJPanel);
 
         mainScreen1.add(tabs, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -30, 770, 730));
 
@@ -474,7 +1127,7 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
             .addGroup(pnlEastLayout.createSequentialGroup()
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(mainScreen1, javax.swing.GroupLayout.PREFERRED_SIZE, 835, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(mainScreen1, javax.swing.GroupLayout.PREFERRED_SIZE, 844, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         pnlEastLayout.setVerticalGroup(
@@ -505,18 +1158,18 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
 
     private void pnlRoomMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlRoomMouseClicked
         // TODO add your handling code here:    
-        tabs.setSelectedIndex(0);
+        tabs.setSelectedIndex(3);
         
     }//GEN-LAST:event_pnlRoomMouseClicked
 
     private void pnlRoomOrderMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlRoomOrderMouseClicked
         // TODO add your handling code here:
-        tabs.setSelectedIndex(2);
+        tabs.setSelectedIndex(1);
     }//GEN-LAST:event_pnlRoomOrderMouseClicked
 
     private void pnlStaffMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlStaffMouseClicked
         // TODO add your handling code here:
-        tabs.setSelectedIndex(1);
+        tabs.setSelectedIndex(2);
     }//GEN-LAST:event_pnlStaffMouseClicked
 
     private void pnlRoomMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlRoomMouseEntered
@@ -528,6 +1181,165 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
         // TODO add your handling code here:
         pnlRoom.setBackground(null);
     }//GEN-LAST:event_pnlRoomMouseExited
+
+    private void btn307ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn307ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn307ActionPerformed
+
+    private void btn315ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn315ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn315ActionPerformed
+
+    private void btn205ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn205ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn205ActionPerformed
+
+    private void btn310ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn310ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn310ActionPerformed
+
+    private void btn203ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn203ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn203ActionPerformed
+
+    private void btn202ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn202ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn202ActionPerformed
+
+    private void btn201ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn201ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn201ActionPerformed
+
+    private void btn204ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn204ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn204ActionPerformed
+
+    private void btn209ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn209ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn209ActionPerformed
+
+    private void btn211ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn211ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn211ActionPerformed
+
+    private void btn208ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn208ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn208ActionPerformed
+
+    private void btn207ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn207ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn207ActionPerformed
+
+    private void btn103ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn103ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn103ActionPerformed
+
+    private void btn212ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn212ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn212ActionPerformed
+
+    private void btn101ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn101ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn101ActionPerformed
+
+    private void btn102ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn102ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn102ActionPerformed
+
+    private void btn210ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn210ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn210ActionPerformed
+
+    private void btn303ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn303ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn303ActionPerformed
+
+    private void btn105ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn105ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn105ActionPerformed
+
+    private void btn305ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn305ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn305ActionPerformed
+
+    private void btn104ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn104ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn104ActionPerformed
+
+    private void btn302ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn302ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn302ActionPerformed
+
+    private void btn106ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn106ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn106ActionPerformed
+
+    private void btn301ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn301ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn301ActionPerformed
+
+    private void btn107ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn107ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn107ActionPerformed
+
+    private void btn306ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn306ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn306ActionPerformed
+
+    private void btn108ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn108ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn108ActionPerformed
+
+    private void btn304ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn304ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn304ActionPerformed
+
+    private void btn109ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn109ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn109ActionPerformed
+
+    private void btn309ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn309ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn309ActionPerformed
+
+    private void btn110ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn110ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn110ActionPerformed
+
+    private void btn311ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn311ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn311ActionPerformed
+
+    private void btn111ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn111ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn111ActionPerformed
+
+    private void btn308ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn308ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn308ActionPerformed
+
+    private void btn112ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn112ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn112ActionPerformed
+
+    private void btn206ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn206ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn206ActionPerformed
+
+    private void pnlRoomOrderMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlRoomOrderMouseEntered
+        // TODO add your handling code here:
+        pnlRoomOrder.setBackground(mouseEntered);
+    }//GEN-LAST:event_pnlRoomOrderMouseEntered
+
+    private void pnlRoomOrderMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pnlRoomOrderMouseExited
+        // TODO add your handling code here:
+        pnlRoomOrder.setBackground(mouseExited);
+    }//GEN-LAST:event_pnlRoomOrderMouseExited
+
+    private void jPanel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel3MouseClicked
+        // TODO add your handling code here:
+        tabs.setSelectedIndex(0);
+    }//GEN-LAST:event_jPanel3MouseClicked
 
     /**
      * @param args the command line arguments
@@ -565,7 +1377,47 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel RoomJPanel;
     private com.hotelmanage.ui.panel.BookRJPanel bookRJPanel2;
+    private com.hotelmanage.ui.button.RoomButton btn101;
+    private com.hotelmanage.ui.button.RoomButton btn102;
+    private com.hotelmanage.ui.button.RoomButton btn103;
+    private com.hotelmanage.ui.button.RoomButton btn104;
+    private com.hotelmanage.ui.button.RoomButton btn105;
+    private com.hotelmanage.ui.button.RoomButton btn106;
+    private com.hotelmanage.ui.button.RoomButton btn107;
+    private com.hotelmanage.ui.button.RoomButton btn108;
+    private com.hotelmanage.ui.button.RoomButton btn109;
+    private com.hotelmanage.ui.button.RoomButton btn110;
+    private com.hotelmanage.ui.button.RoomButton btn111;
+    private com.hotelmanage.ui.button.RoomButton btn112;
+    private com.hotelmanage.ui.button.RoomButton btn201;
+    private com.hotelmanage.ui.button.RoomButton btn202;
+    private com.hotelmanage.ui.button.RoomButton btn203;
+    private com.hotelmanage.ui.button.RoomButton btn204;
+    private com.hotelmanage.ui.button.RoomButton btn205;
+    private com.hotelmanage.ui.button.RoomButton btn206;
+    private com.hotelmanage.ui.button.RoomButton btn207;
+    private com.hotelmanage.ui.button.RoomButton btn208;
+    private com.hotelmanage.ui.button.RoomButton btn209;
+    private com.hotelmanage.ui.button.RoomButton btn210;
+    private com.hotelmanage.ui.button.RoomButton btn211;
+    private com.hotelmanage.ui.button.RoomButton btn212;
+    private com.hotelmanage.ui.button.RoomButton btn301;
+    private com.hotelmanage.ui.button.RoomButton btn302;
+    private com.hotelmanage.ui.button.RoomButton btn303;
+    private com.hotelmanage.ui.button.RoomButton btn304;
+    private com.hotelmanage.ui.button.RoomButton btn305;
+    private com.hotelmanage.ui.button.RoomButton btn306;
+    private com.hotelmanage.ui.button.RoomButton btn307;
+    private com.hotelmanage.ui.button.RoomButton btn308;
+    private com.hotelmanage.ui.button.RoomButton btn309;
+    private com.hotelmanage.ui.button.RoomButton btn310;
+    private com.hotelmanage.ui.button.RoomButton btn311;
+    private com.hotelmanage.ui.button.RoomButton btn312;
+    private com.hotelmanage.ui.button.RoomButton btn313;
+    private com.hotelmanage.ui.button.RoomButton btn314;
+    private com.hotelmanage.ui.button.RoomButton btn315;
     private com.hotelmanage.utils.IconBox iconBox1;
     private com.hotelmanage.utils.IconBox iconBox2;
     private com.hotelmanage.utils.IconBoxNonSelected iconBoxNonSelected1;
@@ -599,7 +1451,6 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
     private javax.swing.JPanel pnlRoomOrder;
     private javax.swing.JPanel pnlStaff;
     private javax.swing.JPanel pnlStatistical;
-    private com.hotelmanage.ui.panel.Room room1;
     private com.hotelmanage.utils.RoomBox roomBox1;
     private com.hotelmanage.utils.RoomBox roomBox2;
     private com.hotelmanage.ui.panel.StaffJPanel staffJPanel1;
@@ -607,4 +1458,6 @@ public class HotelManagerMainDialog extends javax.swing.JFrame {
     // End of variables declaration//GEN-END:variables
 
     boolean keyPress = false;
+    Color mouseExited = null;
+    Color mouseEntered = new Color(0x40394A);
 }
