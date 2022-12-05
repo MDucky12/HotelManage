@@ -18,8 +18,8 @@ public class SqlStatement {
 
     private static String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
     private static String dburl = "jdbc:sqlserver://localhost:1433;database=";
-    private static String user = "";
-    private static String pass = "";
+    private static String user = "sa";
+    private static String pass = "12345";
 
     static {
         try {

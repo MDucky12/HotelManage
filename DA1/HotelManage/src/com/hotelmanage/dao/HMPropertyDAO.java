@@ -16,20 +16,20 @@ import java.util.List;
  * @author duchmps23300
  */
 public class HMPropertyDAO extends HMDAO<HMProperty, String> {
-     String INSERT_SQL = "INSERT INTO ...";
-    String UPDATE_SQL = "UPDATE ... SET ...";
-    String DELETE_SQL = "DELETE FROM ... WHERE ...";
-    String SELECT_ALL_SQL = "SELECT * FROM ...";
-    String SELECT_BY_ID_SQL = "SELECT * FROM ... WHERE ...";
+     String INSERT_SQL = "INSERT INTO tb_Property VALUES(?,?,?)";
+    String UPDATE_SQL = "UPDATE tb_Property SET IDProp = ?, PropName = ?, Price = ?";
+    String DELETE_SQL = "DELETE FROM tb_Property WHERE IDProp = ?";
+    String SELECT_ALL_SQL = "SELECT * FROM tb_Property";
+    String SELECT_BY_ID_SQL = "SELECT * FROM tb_Property WHERE IDProp = ?";
 
     @Override
     public void insert(HMProperty entity) {
-        SqlStatement.update(INSERT_SQL, entity.getIdProperty(), entity.getNameProperty(), entity.getPriceProperty(), entity.getIdBranch());
+        SqlStatement.update(INSERT_SQL, entity.getIdProperty(), entity.getNameProperty(), entity.getPriceProperty());
     }
 
     @Override
     public void update(HMProperty entity) {
-        SqlStatement.update(UPDATE_SQL,entity.getIdProperty(), entity.getNameProperty(), entity.getPriceProperty(), entity.getIdBranch());
+        SqlStatement.update(UPDATE_SQL,entity.getIdProperty(), entity.getNameProperty(), entity.getPriceProperty());
     }
 
     @Override

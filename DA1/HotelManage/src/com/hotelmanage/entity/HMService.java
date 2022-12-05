@@ -12,38 +12,38 @@ public class HMService {
     private int idService;
     private String nameService;
     private String priceService;
-    private int idRoom;
-    private String idBranch;
 
     public HMService() {
     }
 
-    public HMService(int idService, String nameService, String priceService, int idRoom, String idBranch) {
+    public HMService(int idService, String nameService, String priceService) {
         this.idService = idService;
         this.nameService = nameService;
         this.priceService = priceService;
-        this.idRoom = idRoom;
-        this.idBranch = idBranch;
     }
 
     public int getIdService() {
         return idService;
     }
 
+    public void setIdService(int idService) {
+        this.idService = idService;
+    }
+
     public String getNameService() {
         return nameService;
+    }
+
+    public void setNameService(String nameService) {
+        this.nameService = nameService;
     }
 
     public String getPriceService() {
         return priceService;
     }
 
-    public int getIdRoom() {
-        return idRoom;
-    }
-
-    public String getIdBranch() {
-        return idBranch;
+    public void setPriceService(String priceService) {
+        this.priceService = priceService;
     }
     
 }
