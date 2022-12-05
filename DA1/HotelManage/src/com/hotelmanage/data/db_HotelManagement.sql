@@ -31,7 +31,7 @@ CREATE TABLE tb_Room
     Statuss BIT NOT NULL,
 	RoomFloor INT NOT NULL,
 	RoomType INT NOT NULL,
-	RoomPrice FLOAT NOT NULL,
+	RoomPrice FLOAT NOT NULL
 )
 GO
 --DỊCH VỤ
