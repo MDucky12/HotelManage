@@ -1,4 +1,4 @@
-package com.hotelmanage.utils.datechooser;
+package com.hotelmanage.ultils.datechooser;
 
 import java.awt.Color;
 import java.awt.Component;
@@ -227,13 +227,13 @@ public final class DateChooser extends javax.swing.JPanel {
             }
         };
         header = new javax.swing.JPanel();
-        cmdForward = new com.hotelmanage.utils.datechooser.Button();
+        cmdForward = new com.hotelmanage.ultils.datechooser.Button();
         MY = new javax.swing.JLayeredPane();
-        cmdMonth = new com.hotelmanage.utils.datechooser.Button();
+        cmdMonth = new com.hotelmanage.ultils.datechooser.Button();
         lb = new javax.swing.JLabel();
-        cmdYear = new com.hotelmanage.utils.datechooser.Button();
-        cmdPrevious = new com.hotelmanage.utils.datechooser.Button();
-        slide = new com.hotelmanage.utils.datechooser.Slider();
+        cmdYear = new com.hotelmanage.ultils.datechooser.Button();
+        cmdPrevious = new com.hotelmanage.ultils.datechooser.Button();
+        slide = new com.hotelmanage.ultils.datechooser.Slider();
 
         setBackground(new java.awt.Color(255, 255, 255));
 
@@ -482,14 +482,14 @@ public final class DateChooser extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLayeredPane MY;
-    private com.hotelmanage.utils.datechooser.Button cmdForward;
-    private com.hotelmanage.utils.datechooser.Button cmdMonth;
-    private com.hotelmanage.utils.datechooser.Button cmdPrevious;
-    private com.hotelmanage.utils.datechooser.Button cmdYear;
+    private com.hotelmanage.ultils.datechooser.Button cmdForward;
+    private com.hotelmanage.ultils.datechooser.Button cmdMonth;
+    private com.hotelmanage.ultils.datechooser.Button cmdPrevious;
+    private com.hotelmanage.ultils.datechooser.Button cmdYear;
     private javax.swing.JPanel header;
     private javax.swing.JLabel lb;
     private javax.swing.JPopupMenu popup;
-    private com.hotelmanage.utils.datechooser.Slider slide;
+    private com.hotelmanage.ultils.datechooser.Slider slide;
     // End of variables declaration//GEN-END:variables
 
     public SelectedDate getSelectedDate() {
