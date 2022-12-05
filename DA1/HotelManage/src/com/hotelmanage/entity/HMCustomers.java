@@ -13,58 +13,57 @@ public class HMCustomers {
     private String nameCustomers;
     private String phoneNumCustomers;
     private String emailCustomers;
-    private String addressCustomers;
+    private String identify;
 
     public HMCustomers() {
     }
 
-    public HMCustomers(String idCustomers, String nameCustomers, String phoneNumCustomers, String emailCustomers, String addressCustomers) {
+    public HMCustomers(String idCustomers, String nameCustomers, String phoneNumCustomers, String emailCustomers, String identify) {
         this.idCustomers = idCustomers;
         this.nameCustomers = nameCustomers;
         this.phoneNumCustomers = phoneNumCustomers;
         this.emailCustomers = emailCustomers;
-        this.addressCustomers = addressCustomers;
+        this.identify = identify;
     }
 
     public String getIdCustomers() {
         return idCustomers;
     }
 
-    public String getNameCustomers() {
-        return nameCustomers;
-    }
-
-    public String getPhoneNumCustomers() {
-        return phoneNumCustomers;
-    }
-
-    public String getEmailCustomers() {
-        return emailCustomers;
-    }
-
-    public String getAddressCustomers() {
-        return addressCustomers;
-    }
-
     public void setIdCustomers(String idCustomers) {
         this.idCustomers = idCustomers;
+    }
+
+    public String getNameCustomers() {
+        return nameCustomers;
     }
 
     public void setNameCustomers(String nameCustomers) {
         this.nameCustomers = nameCustomers;
     }
 
+    public String getPhoneNumCustomers() {
+        return phoneNumCustomers;
+    }
+
     public void setPhoneNumCustomers(String phoneNumCustomers) {
         this.phoneNumCustomers = phoneNumCustomers;
+    }
+
+    public String getEmailCustomers() {
+        return emailCustomers;
     }
 
     public void setEmailCustomers(String emailCustomers) {
         this.emailCustomers = emailCustomers;
     }
 
-    public void setAddressCustomers(String addressCustomers) {
-        this.addressCustomers = addressCustomers;
+    public String getIdentify() {
+        return identify;
     }
-    
+
+    public void setIdentify(String identify) {
+        this.identify = identify;
+    }
     
 }
