@@ -54,6 +54,7 @@ public class LoginScreen extends javax.swing.JFrame {
         btnCancel.setText("Cancel");
         btnCancel.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
 
+        accountTxt.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         accountTxt.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
 
         lblView.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N

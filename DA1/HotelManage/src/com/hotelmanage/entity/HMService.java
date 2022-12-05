@@ -13,14 +13,20 @@ public class HMService {
     private String nameService;
     private String priceService;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     private int idRoom;
     private String idBranch;
 >>>>>>> 450a3dc92676aa5492d31aa9198a3c6244869869
+=======
+    private int idRoom;
+    private String idBranch;
+>>>>>>> parent of 9f5f870... Update DAO & Entity
 
     public HMService() {
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public HMService(int idService, String nameService, String priceService) {
         this.idService = idService;
@@ -34,6 +40,14 @@ public class HMService {
         this.idRoom = idRoom;
         this.idBranch = idBranch;
 >>>>>>> 450a3dc92676aa5492d31aa9198a3c6244869869
+=======
+    public HMService(int idService, String nameService, String priceService, int idRoom, String idBranch) {
+        this.idService = idService;
+        this.nameService = nameService;
+        this.priceService = priceService;
+        this.idRoom = idRoom;
+        this.idBranch = idBranch;
+>>>>>>> parent of 9f5f870... Update DAO & Entity
     }
 
     public int getIdService() {
@@ -41,16 +55,20 @@ public class HMService {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public void setIdService(int idService) {
         this.idService = idService;
     }
 
 =======
 >>>>>>> 450a3dc92676aa5492d31aa9198a3c6244869869
+=======
+>>>>>>> parent of 9f5f870... Update DAO & Entity
     public String getNameService() {
         return nameService;
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     public void setNameService(String nameService) {
         this.nameService = nameService;
@@ -58,21 +76,29 @@ public class HMService {
 
 =======
 >>>>>>> 450a3dc92676aa5492d31aa9198a3c6244869869
+=======
+>>>>>>> parent of 9f5f870... Update DAO & Entity
     public String getPriceService() {
         return priceService;
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public void setPriceService(String priceService) {
         this.priceService = priceService;
 =======
+=======
+>>>>>>> parent of 9f5f870... Update DAO & Entity
     public int getIdRoom() {
         return idRoom;
     }
 
     public String getIdBranch() {
         return idBranch;
+<<<<<<< HEAD
 >>>>>>> 450a3dc92676aa5492d31aa9198a3c6244869869
+=======
+>>>>>>> parent of 9f5f870... Update DAO & Entity
     }
     
 }

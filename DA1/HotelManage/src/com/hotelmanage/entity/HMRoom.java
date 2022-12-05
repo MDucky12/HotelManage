@@ -10,6 +10,7 @@ package com.hotelmanage.entity;
  */
 public class HMRoom {
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     private String idRoom;
     private boolean status;
@@ -23,23 +24,35 @@ public class HMRoom {
     private String idFloor;
     private String idTypeRoom;
 >>>>>>> 450a3dc92676aa5492d31aa9198a3c6244869869
+=======
+    private int idRoom;
+    private String nameRoom;
+    private boolean status;
+    private String idFloor;
+    private String idTypeRoom;
+>>>>>>> parent of 9f5f870... Update DAO & Entity
 
     public HMRoom() {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public HMRoom(String idRoom, boolean status, String RoomFloor, String RoomType, float RoomPrice) {
+=======
+    public HMRoom(int idRoom, String nameRoom, boolean status, String idFloor, String idTypeRoom) {
+>>>>>>> parent of 9f5f870... Update DAO & Entity
         this.idRoom = idRoom;
+        this.nameRoom = nameRoom;
         this.status = status;
-        this.RoomFloor = RoomFloor;
-        this.RoomType = RoomType;
-        this.RoomPrice = RoomPrice;
+        this.idFloor = idFloor;
+        this.idTypeRoom = idTypeRoom;
     }
 
-    public String getIdRoom() {
+    public int getIdRoom() {
         return idRoom;
     }
 
+<<<<<<< HEAD
     public void setIdRoom(String idRoom) {
         this.idRoom = idRoom;
 =======
@@ -58,6 +71,10 @@ public class HMRoom {
     public String getNameRoom() {
         return nameRoom;
 >>>>>>> 450a3dc92676aa5492d31aa9198a3c6244869869
+=======
+    public String getNameRoom() {
+        return nameRoom;
+>>>>>>> parent of 9f5f870... Update DAO & Entity
     }
 
     public boolean isStatus() {
@@ -65,33 +82,39 @@ public class HMRoom {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+    public void setStatus(boolean status) {
+        this.status = status;
+=======
+    public String getIdFloor() {
+        return idFloor;
+>>>>>>> parent of 9f5f870... Update DAO & Entity
+    }
+
+    public String getIdTypeRoom() {
+        return idTypeRoom;
+    }
+
+    public void setIdRoom(int idRoom) {
+        this.idRoom = idRoom;
+    }
+
+    public void setNameRoom(String nameRoom) {
+        this.nameRoom = nameRoom;
+    }
+
     public void setStatus(boolean status) {
         this.status = status;
     }
 
-    public String getRoomFloor() {
-        return RoomFloor;
+    public void setIdFloor(String idFloor) {
+        this.idFloor = idFloor;
     }
 
-    public void setRoomFloor(String RoomFloor) {
-        this.RoomFloor = RoomFloor;
+    public void setIdTypeRoom(String idTypeRoom) {
+        this.idTypeRoom = idTypeRoom;
     }
-
-    public String getRoomType() {
-        return RoomType;
-    }
-
-    public void setRoomType(String RoomType) {
-        this.RoomType = RoomType;
-    }
-
-    public float getRoomPrice() {
-        return RoomPrice;
-    }
-
-    public void setRoomPrice(float RoomPrice) {
-        this.RoomPrice = RoomPrice;
-    }
+<<<<<<< HEAD
 
 =======
     public String getIdFloor() {
@@ -124,4 +147,8 @@ public class HMRoom {
     
     
 >>>>>>> 450a3dc92676aa5492d31aa9198a3c6244869869
+=======
+    
+    
+>>>>>>> parent of 9f5f870... Update DAO & Entity
 }
