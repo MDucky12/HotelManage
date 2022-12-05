@@ -26,6 +26,7 @@ public class Room extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+<<<<<<< HEAD:DA1/HotelManage/src/com/hotelmanage/ui/panel/Room.java
         btn103 = new com.hotelmanage.ui.button.RoomButton();
         btn101 = new com.hotelmanage.ui.button.RoomButton();
         btn102 = new com.hotelmanage.ui.button.RoomButton();
@@ -62,6 +63,45 @@ public class Room extends javax.swing.JPanel {
         btn307 = new com.hotelmanage.ui.button.RoomButton();
         btn312 = new com.hotelmanage.ui.button.RoomButton();
         btn310 = new com.hotelmanage.ui.button.RoomButton();
+=======
+        mainScreen1 = new com.hotelmanage.utils.MainScreen();
+        btn103 = new com.hotelmanage.utils.RoomButton();
+        btn101 = new com.hotelmanage.utils.RoomButton();
+        btn102 = new com.hotelmanage.utils.RoomButton();
+        btn105 = new com.hotelmanage.utils.RoomButton();
+        btn104 = new com.hotelmanage.utils.RoomButton();
+        btn106 = new com.hotelmanage.utils.RoomButton();
+        btn107 = new com.hotelmanage.utils.RoomButton();
+        btn108 = new com.hotelmanage.utils.RoomButton();
+        btn109 = new com.hotelmanage.utils.RoomButton();
+        btn110 = new com.hotelmanage.utils.RoomButton();
+        btn111 = new com.hotelmanage.utils.RoomButton();
+        btn112 = new com.hotelmanage.utils.RoomButton();
+        btn206 = new com.hotelmanage.utils.RoomButton();
+        btn205 = new com.hotelmanage.utils.RoomButton();
+        btn203 = new com.hotelmanage.utils.RoomButton();
+        btn202 = new com.hotelmanage.utils.RoomButton();
+        btn201 = new com.hotelmanage.utils.RoomButton();
+        btn204 = new com.hotelmanage.utils.RoomButton();
+        btn209 = new com.hotelmanage.utils.RoomButton();
+        btn211 = new com.hotelmanage.utils.RoomButton();
+        btn208 = new com.hotelmanage.utils.RoomButton();
+        btn207 = new com.hotelmanage.utils.RoomButton();
+        btn212 = new com.hotelmanage.utils.RoomButton();
+        btn210 = new com.hotelmanage.utils.RoomButton();
+        btn303 = new com.hotelmanage.utils.RoomButton();
+        btn305 = new com.hotelmanage.utils.RoomButton();
+        btn302 = new com.hotelmanage.utils.RoomButton();
+        btn301 = new com.hotelmanage.utils.RoomButton();
+        btn306 = new com.hotelmanage.utils.RoomButton();
+        btn304 = new com.hotelmanage.utils.RoomButton();
+        btn309 = new com.hotelmanage.utils.RoomButton();
+        btn311 = new com.hotelmanage.utils.RoomButton();
+        btn308 = new com.hotelmanage.utils.RoomButton();
+        btn307 = new com.hotelmanage.utils.RoomButton();
+        btn312 = new com.hotelmanage.utils.RoomButton();
+        btn310 = new com.hotelmanage.utils.RoomButton();
+>>>>>>> 450a3dc92676aa5492d31aa9198a3c6244869869:DA1/HotelManage/src/com/hotelmanage/ui/panel/RoomPanel.java
 
         btn103.setText("103");
         btn103.setFont(new java.awt.Font("Barlow Condensed", 1, 18)); // NOI18N
@@ -777,6 +817,7 @@ public class Room extends javax.swing.JPanel {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+<<<<<<< HEAD:DA1/HotelManage/src/com/hotelmanage/ui/panel/Room.java
     private com.hotelmanage.ui.button.RoomButton btn101;
     private com.hotelmanage.ui.button.RoomButton btn102;
     private com.hotelmanage.ui.button.RoomButton btn103;
@@ -813,5 +854,44 @@ public class Room extends javax.swing.JPanel {
     private com.hotelmanage.ui.button.RoomButton btn310;
     private com.hotelmanage.ui.button.RoomButton btn311;
     private com.hotelmanage.ui.button.RoomButton btn312;
+=======
+    private com.hotelmanage.utils.RoomButton btn101;
+    private com.hotelmanage.utils.RoomButton btn102;
+    private com.hotelmanage.utils.RoomButton btn103;
+    private com.hotelmanage.utils.RoomButton btn104;
+    private com.hotelmanage.utils.RoomButton btn105;
+    private com.hotelmanage.utils.RoomButton btn106;
+    private com.hotelmanage.utils.RoomButton btn107;
+    private com.hotelmanage.utils.RoomButton btn108;
+    private com.hotelmanage.utils.RoomButton btn109;
+    private com.hotelmanage.utils.RoomButton btn110;
+    private com.hotelmanage.utils.RoomButton btn111;
+    private com.hotelmanage.utils.RoomButton btn112;
+    private com.hotelmanage.utils.RoomButton btn201;
+    private com.hotelmanage.utils.RoomButton btn202;
+    private com.hotelmanage.utils.RoomButton btn203;
+    private com.hotelmanage.utils.RoomButton btn204;
+    private com.hotelmanage.utils.RoomButton btn205;
+    private com.hotelmanage.utils.RoomButton btn206;
+    private com.hotelmanage.utils.RoomButton btn207;
+    private com.hotelmanage.utils.RoomButton btn208;
+    private com.hotelmanage.utils.RoomButton btn209;
+    private com.hotelmanage.utils.RoomButton btn210;
+    private com.hotelmanage.utils.RoomButton btn211;
+    private com.hotelmanage.utils.RoomButton btn212;
+    private com.hotelmanage.utils.RoomButton btn301;
+    private com.hotelmanage.utils.RoomButton btn302;
+    private com.hotelmanage.utils.RoomButton btn303;
+    private com.hotelmanage.utils.RoomButton btn304;
+    private com.hotelmanage.utils.RoomButton btn305;
+    private com.hotelmanage.utils.RoomButton btn306;
+    private com.hotelmanage.utils.RoomButton btn307;
+    private com.hotelmanage.utils.RoomButton btn308;
+    private com.hotelmanage.utils.RoomButton btn309;
+    private com.hotelmanage.utils.RoomButton btn310;
+    private com.hotelmanage.utils.RoomButton btn311;
+    private com.hotelmanage.utils.RoomButton btn312;
+    private com.hotelmanage.utils.MainScreen mainScreen1;
+>>>>>>> 450a3dc92676aa5492d31aa9198a3c6244869869:DA1/HotelManage/src/com/hotelmanage/ui/panel/RoomPanel.java
     // End of variables declaration//GEN-END:variables
 }

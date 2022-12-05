@@ -15,6 +15,7 @@ import java.util.List;
  * @author duchmps23300
  */
 public class HMRoomDAO extends HMDAO<HMRoom, Integer> {
+<<<<<<< HEAD
     String INSERT_SQL = "INSERT INTO tb_Room VALUES(?,?,?,?,?,)";
     String UPDATE_SQL = "UPDATE tb_Room SET IDRoom = ?, Statuss = ?, RoomFloor = ?, RoomType = ?, RoomPrice = ?";
     String DELETE_SQL = "DELETE FROM tb_Room WHERE IDRoom = ?";
@@ -24,12 +25,27 @@ public class HMRoomDAO extends HMDAO<HMRoom, Integer> {
     @Override
     public void insert(HMRoom entity) {
         SqlStatement.update(INSERT_SQL, entity.getIdRoom(), entity.isStatus(), entity.getRoomFloor(), entity.getRoomType());
+=======
+    String INSERT_SQL = "INSERT INTO ...";
+    String UPDATE_SQL = "UPDATE ... SET ...";
+    String DELETE_SQL = "DELETE FROM ... WHERE ...";
+    String SELECT_ALL_SQL = "SELECT * FROM ...";
+    String SELECT_BY_ID_SQL = "SELECT * FROM ... WHERE ...";
+    
+    @Override
+    public void insert(HMRoom entity) {
+        SqlStatement.update(INSERT_SQL, entity.getIdRoom(), entity.getNameRoom(), entity.isStatus(), entity.getIdFloor(), entity.getIdTypeRoom());
+>>>>>>> 450a3dc92676aa5492d31aa9198a3c6244869869
     }
 
 
     @Override
     public void update(HMRoom entity) {
+<<<<<<< HEAD
         SqlStatement.update(UPDATE_SQL, entity.getIdRoom(), entity.isStatus(), entity.getRoomFloor(), entity.getRoomType());
+=======
+        SqlStatement.update(UPDATE_SQL, entity.getIdRoom(), entity.getNameRoom(), entity.isStatus(), entity.getIdFloor(), entity.getIdTypeRoom());
+>>>>>>> 450a3dc92676aa5492d31aa9198a3c6244869869
     }
 
     @Override

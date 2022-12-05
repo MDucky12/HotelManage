@@ -16,6 +16,7 @@ import java.util.List;
  */
 public class HMCustomersDAO extends HMDAO<HMCustomers, String> {
 
+<<<<<<< HEAD
     String INSERT_SQL = "INSERT INTO tb_Customer VALUES(?,?,?,?)";
     String UPDATE_SQL = "UPDATE tb_Customer SET IDCus = ?, Name = ?, Phone = ?, Email = ?, Identity = ?";
     String DELETE_SQL = "DELETE FROM tb_Customer WHERE IDCus = ?";
@@ -25,11 +26,26 @@ public class HMCustomersDAO extends HMDAO<HMCustomers, String> {
     @Override
     public void insert(HMCustomers entity) {
         SqlStatement.update(INSERT_SQL, entity.getNameCustomers(), entity.getPhoneNumCustomers(), entity.getEmailCustomers(), entity.getIdentify());
+=======
+    String INSERT_SQL = "INSERT INTO ...";
+    String UPDATE_SQL = "UPDATE ... SET ...";
+    String DELETE_SQL = "DELETE FROM ... WHERE ...";
+    String SELECT_ALL_SQL = "SELECT * FROM ...";
+    String SELECT_BY_ID_SQL = "SELECT * FROM ... WHERE ...";
+
+    @Override
+    public void insert(HMCustomers entity) {
+        SqlStatement.update(INSERT_SQL, entity.getIdCustomers(), entity.getNameCustomers(), entity.getPhoneNumCustomers(), entity.getEmailCustomers(), entity.getAddressCustomers());
+>>>>>>> 450a3dc92676aa5492d31aa9198a3c6244869869
     }
 
     @Override
     public void update(HMCustomers entity) {
+<<<<<<< HEAD
         SqlStatement.update(UPDATE_SQL, entity.getIdCustomers(), entity.getNameCustomers(), entity.getPhoneNumCustomers(), entity.getEmailCustomers(), entity.getIdentify());
+=======
+        SqlStatement.update(UPDATE_SQL, entity.getIdCustomers(), entity.getNameCustomers(), entity.getPhoneNumCustomers(), entity.getEmailCustomers(), entity.getAddressCustomers());
+>>>>>>> 450a3dc92676aa5492d31aa9198a3c6244869869
     }
 
     @Override

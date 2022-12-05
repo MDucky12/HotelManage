@@ -16,6 +16,7 @@ import java.util.List;
  * @author duchmps23300
  */
 public class HMPropertyDAO extends HMDAO<HMProperty, String> {
+<<<<<<< HEAD
      String INSERT_SQL = "INSERT INTO tb_Property VALUES(?,?,?)";
     String UPDATE_SQL = "UPDATE tb_Property SET IDProp = ?, PropName = ?, Price = ?";
     String DELETE_SQL = "DELETE FROM tb_Property WHERE IDProp = ?";
@@ -25,11 +26,26 @@ public class HMPropertyDAO extends HMDAO<HMProperty, String> {
     @Override
     public void insert(HMProperty entity) {
         SqlStatement.update(INSERT_SQL, entity.getIdProperty(), entity.getNameProperty(), entity.getPriceProperty());
+=======
+     String INSERT_SQL = "INSERT INTO ...";
+    String UPDATE_SQL = "UPDATE ... SET ...";
+    String DELETE_SQL = "DELETE FROM ... WHERE ...";
+    String SELECT_ALL_SQL = "SELECT * FROM ...";
+    String SELECT_BY_ID_SQL = "SELECT * FROM ... WHERE ...";
+
+    @Override
+    public void insert(HMProperty entity) {
+        SqlStatement.update(INSERT_SQL, entity.getIdProperty(), entity.getNameProperty(), entity.getPriceProperty(), entity.getIdBranch());
+>>>>>>> 450a3dc92676aa5492d31aa9198a3c6244869869
     }
 
     @Override
     public void update(HMProperty entity) {
+<<<<<<< HEAD
         SqlStatement.update(UPDATE_SQL,entity.getIdProperty(), entity.getNameProperty(), entity.getPriceProperty());
+=======
+        SqlStatement.update(UPDATE_SQL,entity.getIdProperty(), entity.getNameProperty(), entity.getPriceProperty(), entity.getIdBranch());
+>>>>>>> 450a3dc92676aa5492d31aa9198a3c6244869869
     }
 
     @Override

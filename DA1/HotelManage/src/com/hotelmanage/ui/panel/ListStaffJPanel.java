@@ -28,17 +28,17 @@ public class ListStaffJPanel extends javax.swing.JPanel {
 
         jPanel1 = new javax.swing.JPanel();
         txtSearch = new javax.swing.JTextField();
-        roomButton1 = new com.hotelmanage.ui.button.RoomButton();
+        roomButton1 = new com.hotelmanage.utils.RoomButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        roomButton2 = new com.hotelmanage.ui.button.RoomButton();
-        roomButton3 = new com.hotelmanage.ui.button.RoomButton();
-        roomButton4 = new com.hotelmanage.ui.button.RoomButton();
-        roomButton5 = new com.hotelmanage.ui.button.RoomButton();
-        roomButton6 = new com.hotelmanage.ui.button.RoomButton();
-        roomButton7 = new com.hotelmanage.ui.button.RoomButton();
-        roomButton8 = new com.hotelmanage.ui.button.RoomButton();
-        roomButton9 = new com.hotelmanage.ui.button.RoomButton();
+        roomButton2 = new com.hotelmanage.utils.RoomButton();
+        roomButton3 = new com.hotelmanage.utils.RoomButton();
+        roomButton4 = new com.hotelmanage.utils.RoomButton();
+        roomButton5 = new com.hotelmanage.utils.RoomButton();
+        roomButton6 = new com.hotelmanage.utils.RoomButton();
+        roomButton7 = new com.hotelmanage.utils.RoomButton();
+        roomButton8 = new com.hotelmanage.utils.RoomButton();
+        roomButton9 = new com.hotelmanage.utils.RoomButton();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setMinimumSize(new java.awt.Dimension(719, 680));
@@ -163,15 +163,15 @@ public class ListStaffJPanel extends javax.swing.JPanel {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
-    private com.hotelmanage.ui.button.RoomButton roomButton1;
-    private com.hotelmanage.ui.button.RoomButton roomButton2;
-    private com.hotelmanage.ui.button.RoomButton roomButton3;
-    private com.hotelmanage.ui.button.RoomButton roomButton4;
-    private com.hotelmanage.ui.button.RoomButton roomButton5;
-    private com.hotelmanage.ui.button.RoomButton roomButton6;
-    private com.hotelmanage.ui.button.RoomButton roomButton7;
-    private com.hotelmanage.ui.button.RoomButton roomButton8;
-    private com.hotelmanage.ui.button.RoomButton roomButton9;
+    private com.hotelmanage.utils.RoomButton roomButton1;
+    private com.hotelmanage.utils.RoomButton roomButton2;
+    private com.hotelmanage.utils.RoomButton roomButton3;
+    private com.hotelmanage.utils.RoomButton roomButton4;
+    private com.hotelmanage.utils.RoomButton roomButton5;
+    private com.hotelmanage.utils.RoomButton roomButton6;
+    private com.hotelmanage.utils.RoomButton roomButton7;
+    private com.hotelmanage.utils.RoomButton roomButton8;
+    private com.hotelmanage.utils.RoomButton roomButton9;
     private javax.swing.JTextField txtSearch;
     // End of variables declaration//GEN-END:variables
 }
